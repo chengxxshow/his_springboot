@@ -1,0 +1,13 @@
+server:
+  port: 8090
+
+mybatis:
+  mapper-locations: classpath:mappings/*.xml
+  type-aliases-package: com.neuedu.pojo
+
+#showSql
+logging:
+  level:
+    com:
+      example:
+        mapper : debug
