@@ -12,4 +12,5 @@ public interface UserMapper {
 
     public User getUserBynameandpsw(@Param("uname")String username, @Param("psw")String password);
 
+    User getUserById(@Param("id")int id);
 }

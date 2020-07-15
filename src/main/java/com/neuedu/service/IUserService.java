@@ -7,4 +7,5 @@ public interface IUserService {
 
     public User getUserBynameandpsw(String username, String password);
 
+    User getUserById(int id);
 }

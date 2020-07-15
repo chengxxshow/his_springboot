@@ -31,4 +31,17 @@ public class UserController {
         }
         return user;
     }
+
+    @RequestMapping("/logOut")
+    @ResponseBody
+    public void logOut(HttpSession session){
+        session.invalidate();
+    }
+
+    @RequestMapping("/getUserById")
+    @ResponseBody
+    public User getUserById(@RequestParam int id){
+        System.out.println("ID:"+id);
+        return userService.getUserById(id);
+    }
 }

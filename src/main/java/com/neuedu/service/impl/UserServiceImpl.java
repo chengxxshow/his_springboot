@@ -22,5 +22,10 @@ public class UserServiceImpl implements IUserService {
         return userMapper.getUserBynameandpsw(username,password);
     }
 
+    @Override
+    public User getUserById(int id) {
+        return userMapper.getUserById(id);
+    }
+
 
 }
