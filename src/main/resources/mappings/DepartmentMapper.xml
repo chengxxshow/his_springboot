@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.neuedu.mapper.DepartmentMapper">
+
+  <resultMap id="BaseResultMap" type="com.neuedu.pojo.Department">
+    <result column="ID" jdbcType="INTEGER" property="id" />
+    <result column="DeptCode" jdbcType="VARCHAR" property="deptcode" />
+    <result column="DeptName" jdbcType="VARCHAR" property="deptname" />
+    <result column="DeptCategoryID" jdbcType="INTEGER" property="deptcategoryid" />
+    <result column="DeptType" jdbcType="INTEGER" property="depttype" />
+    <result column="DelMark" jdbcType="INTEGER" property="delmark" />
+  </resultMap>
+  <insert id="insert" parameterType="com.neuedu.pojo.Department">
+    insert into department (ID, DeptCode, DeptName, 
+      DeptCategoryID, DeptType, DelMark
+      )
+    values (#{id,jdbcType=INTEGER}, #{deptcode,jdbcType=VARCHAR}, #{deptname,jdbcType=VARCHAR}, 
+      #{deptcategoryid,jdbcType=INTEGER}, #{depttype,jdbcType=INTEGER}, #{delmark,jdbcType=INTEGER}
+      )
+  </insert>
+  <insert id="insertSelective" parameterType="com.neuedu.pojo.Department">
+    insert into department
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        ID,
+      </if>
+      <if test="deptcode != null">
+        DeptCode,
+      </if>
+      <if test="deptname != null">
+        DeptName,
+      </if>
+      <if test="deptcategoryid != null">
+        DeptCategoryID,
+      </if>
+      <if test="depttype != null">
+        DeptType,
+      </if>
+      <if test="delmark != null">
+        DelMark,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        #{id,jdbcType=INTEGER},
+      </if>
+      <if test="deptcode != null">
+        #{deptcode,jdbcType=VARCHAR},
+      </if>
+      <if test="deptname != null">
+        #{deptname,jdbcType=VARCHAR},
+      </if>
+      <if test="deptcategoryid != null">
+        #{deptcategoryid,jdbcType=INTEGER},
+      </if>
+      <if test="depttype != null">
+        #{depttype,jdbcType=INTEGER},
+      </if>
+      <if test="delmark != null">
+        #{delmark,jdbcType=INTEGER},
+      </if>
+    </trim>
+  </insert>
+
+</mapper>

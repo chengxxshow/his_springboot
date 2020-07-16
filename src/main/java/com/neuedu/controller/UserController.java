@@ -21,9 +21,8 @@ public class UserController {
     @RequestMapping("/login")
     @ResponseBody
     public User login(@RequestBody User lUser, HttpSession session){
-        System.out.println("111"+userService);
         System.out.println(lUser+"---come from front----");
-        User user=userService.getUserBynameandpsw(lUser.getUsername(),lUser.getPassword());
+        User user=userService.getUserBynameandpsw(lUser.getUserName(),lUser.getPassword());
         System.out.println(user+"---back to front----");
         // success login in  store current user to session
         if(user!=null){

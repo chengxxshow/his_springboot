@@ -1,50 +1,95 @@
 package com.neuedu.pojo;
 
 public class User {
-    private int  id;
-    private String username;
+    private String id;
+    private String userName;
     private String password;
-    private int userType;
+    private String realName;
+    private String useType;
+    private String docTitleID;
+    private String isScheduling;
+    private String deptID;
+    private String registLeID;
+    private String delMark;
 
-    public int getId() {
+    public User() {
+
+    }
+
+    public String getId() {
         return id;
     }
-
-    public String getUsername() {
-        return username;
+    public void setId(String id) {
+        this.id = id;
     }
-
+    public String getUserName() {
+        return userName;
+    }
+    public void setUserName(String userName) {
+        this.userName = userName;
+    }
     public String getPassword() {
         return password;
     }
-
-    public void setId(int id) {
-        this.id = id;
-    }
-
-    public void setUsername(String username) {
-        this.username = username;
-    }
-
     public void setPassword(String password) {
         this.password = password;
     }
-
-    public int getUserType() {
-        return userType;
+    public String getRealName() {
+        return realName;
     }
-
-    public void setUserType(int userType) {
-        this.userType = userType;
+    public void setRealName(String realName) {
+        this.realName = realName;
+    }
+    public String getUseType() {
+        return useType;
+    }
+    public void setUseType(String useType) {
+        this.useType = useType;
+    }
+    public String getDocTitleID() {
+        return docTitleID;
+    }
+    public void setDocTitleID(String docTitleID) {
+        this.docTitleID = docTitleID;
+    }
+    public String getIsScheduling() {
+        return isScheduling;
+    }
+    public void setIsScheduling(String isScheduling) {
+        this.isScheduling = isScheduling;
+    }
+    public String getDeptID() {
+        return deptID;
+    }
+    public void setDeptID(String deptID) {
+        this.deptID = deptID;
+    }
+    public String getRegistLeID() {
+        return registLeID;
+    }
+    public void setRegistLeID(String registLeID) {
+        this.registLeID = registLeID;
+    }
+    public String getDelMark() {
+        return delMark;
+    }
+    public void setDelMark(String delMark) {
+        this.delMark = delMark;
     }
 
     @Override
     public String toString() {
         return "User{" +
-                "id=" + id +
-                ", username='" + username + '\'' +
+                "id='" + id + '\'' +
+                ", userName='" + userName + '\'' +
                 ", password='" + password + '\'' +
-                ", userType=" + userType +
+                ", realName='" + realName + '\'' +
+                ", useType='" + useType + '\'' +
+                ", docTitleID='" + docTitleID + '\'' +
+                ", isScheduling='" + isScheduling + '\'' +
+                ", deptID='" + deptID + '\'' +
+                ", registLeID='" + registLeID + '\'' +
+                ", delMark='" + delMark + '\'' +
                 '}';
     }
 }
