@@ -12,6 +12,27 @@
   <sql id="Base_Column_List">
     ID, RuleName, DeptID, UserID, Week, DelMark
   </sql>
+
+  <select id="getRuleList" resultType="java.util.Map">
+      select a.*,b.realname,c.deptname
+      from rule a,user b,department c
+      where a.userid=b.id and a.deptid=c.id and a.DelMark=1
+      <if test="deptid!=null and deptid!=''">
+         and a.deptid=#{deptid}
+      </if>
+      limit #{start},#{count}
+  </select>
+
+  <select id="getRuleCount" resultType="int">
+      select count(*)  from rule
+      where   DelMark=1
+        <if test="deptid!=null and deptid!=''">
+           and deptid=#{deptid}
+        </if>
+
+  </select>
+
+
   <select id="selectByPrimaryKey" parameterType="Integer" resultMap="BaseResultMap">
     select 
     <include refid="Base_Column_List" />
