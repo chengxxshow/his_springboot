@@ -28,4 +28,5 @@ public interface SchedulingMapper {
     int updateByPrimaryKey(Scheduling record);
 
 
+    int addScheduling(Map<String, Object> schdulingMap);
 }

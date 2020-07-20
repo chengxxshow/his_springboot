@@ -46,6 +46,12 @@
         </if>
    </select>
 
+  <insert id="addScheduling" parameterType="java.util.Map">
+    insert into scheduling (SchedDate, DeptID,
+      UserID, Noon, RuleID,
+      DelMark)
+    values ( #{scheduDate}, #{deptId}, #{UserID}, #{noon}, #{ruleId}, 1)
+  </insert>
 
   <select id="selectByPrimaryKey" parameterType="Integer" resultMap="BaseResultMap">
     select 

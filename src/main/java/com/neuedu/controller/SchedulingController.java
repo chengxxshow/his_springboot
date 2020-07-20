@@ -7,12 +7,7 @@ import java.util.Map;
 import com.neuedu.service.SchedulingService;
 import org.apache.ibatis.annotations.Param;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
-
+import org.springframework.web.bind.annotation.*;
 
 
 @RestController
@@ -35,6 +30,21 @@ public class SchedulingController {
         map.put("totalCount", totalCount);//totalCount  10
         map.put("list", list);
         
+        return map;
+    }
+    //生成排班计划
+    @RequestMapping("/add")
+    public Map<String,Object>  addScheduling(@RequestBody Map<String,Object> schdulingMap){
+        System.out.println("生成排班计划对象："+schdulingMap);
+        Map<String ,Object> map=new HashMap<String,Object>();
+        int i=schedulingService.addScheduling(schdulingMap);
+        if(i>0){
+            map.put("msg","排班计划添加成功！");
+            map.put("status",200);
+        }else{
+            map.put("msg","排班计划添加失败！");
+            map.put("status",403);
+        }
         return map;
     }
 

@@ -10,4 +10,6 @@ public interface SchedulingService {
 
 
 	int getSchedulingCount(String starDate, String endDate);
+
+    int addScheduling(Map<String, Object> schdulingMap);
 }
