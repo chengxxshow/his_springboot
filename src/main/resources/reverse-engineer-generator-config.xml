@@ -56,13 +56,7 @@
 <!--               <columnOverride column="id" javaType="Integer" />-->
 <!--         </table>-->
 
-		<table tableName="department" domainObjectName="Department"
-			   enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false"
-			   enableSelectByExample="false" selectByExampleQueryId="false" >
-			<columnOverride column="id" javaType="Integer" />
-		</table>
-
-<!--		<table tableName="registlevel" domainObjectName="RegistLevel"-->
+<!--		<table tableName="department" domainObjectName="Department"-->
 <!--			   enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false"-->
 <!--			   enableSelectByExample="false" selectByExampleQueryId="false" >-->
 <!--			<columnOverride column="id" javaType="Integer" />-->
@@ -73,6 +67,7 @@
 <!--			   enableSelectByExample="false" selectByExampleQueryId="false" >-->
 <!--			<columnOverride column="id" javaType="Integer" />-->
 <!--		</table>-->
+
 
 
 <!--		<table tableName="rule" domainObjectName="Rule"-->
@@ -86,5 +81,46 @@
 <!--			   enableSelectByExample="false" selectByExampleQueryId="false" >-->
 <!--			<columnOverride column="id" javaType="Integer" />-->
 <!--		</table>-->
+
+<!--		 患者 挂号信息表-->
+		  <table tableName="register" domainObjectName="Register"
+          enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false"
+                enableSelectByExample="false" selectByExampleQueryId="false" >
+                <columnOverride column="id" javaType="Integer" />
+          </table>
+		<!--		发票  -->
+		<table tableName="invoice" domainObjectName="Invoice"
+			   enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false"
+			   enableSelectByExample="false" selectByExampleQueryId="false" >
+			<columnOverride column="id" javaType="Integer" />
+		</table>
+		<!--		 患者费用表 -->
+		<table tableName="patientcosts" domainObjectName="PatientCosts"
+			   enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false"
+			   enableSelectByExample="false" selectByExampleQueryId="false" >
+			<columnOverride column="id" javaType="Integer" />
+		</table>
+		<!--		 常数分类表 -->
+
+		  <table tableName="constanttype" domainObjectName="ConstantType"
+        enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false"
+              enableSelectByExample="false" selectByExampleQueryId="false" >
+              <columnOverride column="id" javaType="Integer" />
+        </table>
+
+<!--		常数项表  -->
+		     <table tableName="constantitem" domainObjectName="ConstantItem"
+          enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false"
+                enableSelectByExample="false" selectByExampleQueryId="false" >
+                <columnOverride column="id" javaType="Integer" />
+          </table>
+<!--		 结算类别 -->
+		      <table tableName="settlecategory" domainObjectName="SettleCategory"
+        enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false"
+              enableSelectByExample="false" selectByExampleQueryId="false" >
+              <columnOverride column="id" javaType="Integer" />
+        </table>
+
+
 	</context>
 </generatorConfiguration>

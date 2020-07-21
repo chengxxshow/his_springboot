@@ -3595,3 +3595,530 @@ Unconditional classes:
 
 
 2020-07-20 17:15:25.926 [main] INFO  com.neuedu.HisSpringbootApplication - Started HisSpringbootApplication in 12.179 seconds (JVM running for 14.397)
+2020-07-20 17:18:02.173 [http-nio-8091-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-07-20 17:18:02.175 [http-nio-8091-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-07-20 17:18:02.175 [http-nio-8091-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+2020-07-20 17:18:02.209 [http-nio-8091-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2020-07-20 17:18:02.210 [http-nio-8091-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 35 ms
+2020-07-20 17:18:02.354 [http-nio-8091-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/neusys/scheduling/all?page=1&count=10&startDate=&endDate=", parameters={masked}
+2020-07-20 17:18:02.372 [http-nio-8091-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.neuedu.controller.SchedulingController#getSchedulingList(Integer, Integer, String, String)
+2020-07-20 17:18:02.508 [http-nio-8091-exec-1] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2020-07-20 17:18:02.538 [http-nio-8091-exec-1] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@13dd98] was not registered for synchronization because synchronization is not active
+2020-07-20 17:18:02.641 [http-nio-8091-exec-1] DEBUG o.springframework.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2020-07-20 17:18:02.643 [http-nio-8091-exec-1] DEBUG com.zaxxer.hikari.HikariConfig - HikariPool-1 - configuration:
+2020-07-20 17:18:02.657 [http-nio-8091-exec-1] DEBUG com.zaxxer.hikari.HikariConfig - allowPoolSuspension.............false
+2020-07-20 17:18:02.657 [http-nio-8091-exec-1] DEBUG com.zaxxer.hikari.HikariConfig - autoCommit......................true
+2020-07-20 17:18:02.658 [http-nio-8091-exec-1] DEBUG com.zaxxer.hikari.HikariConfig - catalog.........................none
+2020-07-20 17:18:02.658 [http-nio-8091-exec-1] DEBUG com.zaxxer.hikari.HikariConfig - connectionInitSql...............none
+2020-07-20 17:18:02.658 [http-nio-8091-exec-1] DEBUG com.zaxxer.hikari.HikariConfig - connectionTestQuery.............none
+2020-07-20 17:18:02.658 [http-nio-8091-exec-1] DEBUG com.zaxxer.hikari.HikariConfig - connectionTimeout...............30000
+2020-07-20 17:18:02.659 [http-nio-8091-exec-1] DEBUG com.zaxxer.hikari.HikariConfig - dataSource......................none
+2020-07-20 17:18:02.659 [http-nio-8091-exec-1] DEBUG com.zaxxer.hikari.HikariConfig - dataSourceClassName.............none
+2020-07-20 17:18:02.659 [http-nio-8091-exec-1] DEBUG com.zaxxer.hikari.HikariConfig - dataSourceJNDI..................none
+2020-07-20 17:18:02.660 [http-nio-8091-exec-1] DEBUG com.zaxxer.hikari.HikariConfig - dataSourceProperties............{password=<masked>}
+2020-07-20 17:18:02.660 [http-nio-8091-exec-1] DEBUG com.zaxxer.hikari.HikariConfig - driverClassName................."com.mysql.cj.jdbc.Driver"
+2020-07-20 17:18:02.661 [http-nio-8091-exec-1] DEBUG com.zaxxer.hikari.HikariConfig - exceptionOverrideClassName......none
+2020-07-20 17:18:02.661 [http-nio-8091-exec-1] DEBUG com.zaxxer.hikari.HikariConfig - healthCheckProperties...........{}
+2020-07-20 17:18:02.661 [http-nio-8091-exec-1] DEBUG com.zaxxer.hikari.HikariConfig - healthCheckRegistry.............none
+2020-07-20 17:18:02.661 [http-nio-8091-exec-1] DEBUG com.zaxxer.hikari.HikariConfig - idleTimeout.....................600000
+2020-07-20 17:18:02.661 [http-nio-8091-exec-1] DEBUG com.zaxxer.hikari.HikariConfig - initializationFailTimeout.......1
+2020-07-20 17:18:02.662 [http-nio-8091-exec-1] DEBUG com.zaxxer.hikari.HikariConfig - isolateInternalQueries..........false
+2020-07-20 17:18:02.662 [http-nio-8091-exec-1] DEBUG com.zaxxer.hikari.HikariConfig - jdbcUrl.........................jdbc:mysql://localhost:3306/his?useUnicode=true&characterEncoding=utf-8&useSSL=true&serverTimezone=UTC
+2020-07-20 17:18:02.662 [http-nio-8091-exec-1] DEBUG com.zaxxer.hikari.HikariConfig - leakDetectionThreshold..........0
+2020-07-20 17:18:02.663 [http-nio-8091-exec-1] DEBUG com.zaxxer.hikari.HikariConfig - maxLifetime.....................1800000
+2020-07-20 17:18:02.663 [http-nio-8091-exec-1] DEBUG com.zaxxer.hikari.HikariConfig - maximumPoolSize.................10
+2020-07-20 17:18:02.663 [http-nio-8091-exec-1] DEBUG com.zaxxer.hikari.HikariConfig - metricRegistry..................none
+2020-07-20 17:18:02.663 [http-nio-8091-exec-1] DEBUG com.zaxxer.hikari.HikariConfig - metricsTrackerFactory...........none
+2020-07-20 17:18:02.663 [http-nio-8091-exec-1] DEBUG com.zaxxer.hikari.HikariConfig - minimumIdle.....................10
+2020-07-20 17:18:02.664 [http-nio-8091-exec-1] DEBUG com.zaxxer.hikari.HikariConfig - password........................<masked>
+2020-07-20 17:18:02.664 [http-nio-8091-exec-1] DEBUG com.zaxxer.hikari.HikariConfig - poolName........................"HikariPool-1"
+2020-07-20 17:18:02.664 [http-nio-8091-exec-1] DEBUG com.zaxxer.hikari.HikariConfig - readOnly........................false
+2020-07-20 17:18:02.664 [http-nio-8091-exec-1] DEBUG com.zaxxer.hikari.HikariConfig - registerMbeans..................false
+2020-07-20 17:18:02.665 [http-nio-8091-exec-1] DEBUG com.zaxxer.hikari.HikariConfig - scheduledExecutor...............none
+2020-07-20 17:18:02.665 [http-nio-8091-exec-1] DEBUG com.zaxxer.hikari.HikariConfig - schema..........................none
+2020-07-20 17:18:02.665 [http-nio-8091-exec-1] DEBUG com.zaxxer.hikari.HikariConfig - threadFactory...................internal
+2020-07-20 17:18:02.665 [http-nio-8091-exec-1] DEBUG com.zaxxer.hikari.HikariConfig - transactionIsolation............default
+2020-07-20 17:18:02.665 [http-nio-8091-exec-1] DEBUG com.zaxxer.hikari.HikariConfig - username........................"root"
+2020-07-20 17:18:02.666 [http-nio-8091-exec-1] DEBUG com.zaxxer.hikari.HikariConfig - validationTimeout...............5000
+2020-07-20 17:18:02.666 [http-nio-8091-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2020-07-20 17:18:03.209 [http-nio-8091-exec-1] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1ffa9a
+2020-07-20 17:18:03.214 [http-nio-8091-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2020-07-20 17:18:03.223 [http-nio-8091-exec-1] DEBUG o.m.spring.transaction.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@18359808 wrapping com.mysql.cj.jdbc.ConnectionImpl@1ffa9a] will not be managed by Spring
+2020-07-20 17:18:03.255 [http-nio-8091-exec-1] DEBUG c.n.mapper.SchedulingMapper.getSchedulingCount - ==>  Preparing: select count(*) from scheduling a ,user b, department c,registlevel d where a.UserID=b.id and a.DeptID=c.id and b.registLeID=d.id and b.isScheduling='是' 
+2020-07-20 17:18:03.320 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=1, active=1, idle=0, waiting=0)
+2020-07-20 17:18:03.338 [HikariPool-1 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@817a87
+2020-07-20 17:18:03.341 [http-nio-8091-exec-1] DEBUG c.n.mapper.SchedulingMapper.getSchedulingCount - ==> Parameters: 
+2020-07-20 17:18:03.353 [HikariPool-1 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1bc70bc
+2020-07-20 17:18:03.363 [HikariPool-1 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@db9e6c
+2020-07-20 17:18:03.380 [HikariPool-1 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1938ff3
+2020-07-20 17:18:03.395 [HikariPool-1 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@13267e
+2020-07-20 17:18:03.408 [HikariPool-1 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1dd36d9
+2020-07-20 17:18:03.425 [HikariPool-1 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@172eb09
+2020-07-20 17:18:03.452 [HikariPool-1 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1ac0fff
+2020-07-20 17:18:03.472 [HikariPool-1 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1337eb7
+2020-07-20 17:18:03.474 [HikariPool-1 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - After adding stats (total=10, active=1, idle=9, waiting=0)
+2020-07-20 17:18:03.498 [http-nio-8091-exec-1] DEBUG c.n.mapper.SchedulingMapper.getSchedulingCount - <==      Total: 1
+2020-07-20 17:18:03.510 [http-nio-8091-exec-1] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@13dd98]
+2020-07-20 17:18:03.513 [http-nio-8091-exec-1] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2020-07-20 17:18:03.514 [http-nio-8091-exec-1] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@150282e] was not registered for synchronization because synchronization is not active
+2020-07-20 17:18:03.515 [http-nio-8091-exec-1] DEBUG o.springframework.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2020-07-20 17:18:03.516 [http-nio-8091-exec-1] DEBUG o.m.spring.transaction.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@3997932 wrapping com.mysql.cj.jdbc.ConnectionImpl@1ffa9a] will not be managed by Spring
+2020-07-20 17:18:03.516 [http-nio-8091-exec-1] DEBUG c.neuedu.mapper.SchedulingMapper.getSchedulingList - ==>  Preparing: select a.id,a.SchedDate,c.deptname,b.realName,a.Noon,d.registname,d.registquota,a.DelMark from scheduling a ,user b, department c,registlevel d where a.UserID=b.id and a.DeptID=c.id and b.registLeID=d.id and b.isScheduling='是' order by a.SchedDate desc limit ?,? 
+2020-07-20 17:18:03.517 [http-nio-8091-exec-1] DEBUG c.neuedu.mapper.SchedulingMapper.getSchedulingList - ==> Parameters: 0(Integer), 10(Integer)
+2020-07-20 17:18:03.662 [http-nio-8091-exec-1] DEBUG c.neuedu.mapper.SchedulingMapper.getSchedulingList - <==      Total: 10
+2020-07-20 17:18:03.663 [http-nio-8091-exec-1] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@150282e]
+2020-07-20 17:18:03.753 [http-nio-8091-exec-1] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-07-20 17:18:03.755 [http-nio-8091-exec-1] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [{totalCount=12964, list=[{realName=霍去病, registquota=30, SchedDate=2020-08-10, Noon=上午, id=13266, dep (truncated)...]
+2020-07-20 17:18:03.945 [http-nio-8091-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2020-07-20 17:18:15.382 [http-nio-8091-exec-3] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/neusys/rule/all?page=1&count=100&deptID=2", parameters={masked}
+2020-07-20 17:18:15.383 [http-nio-8091-exec-3] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.neuedu.controller.RuleController#getRuleList(Integer, Integer, String)
+2020-07-20 17:18:15.391 [http-nio-8091-exec-3] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2020-07-20 17:18:15.391 [http-nio-8091-exec-3] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@16ff447] was not registered for synchronization because synchronization is not active
+2020-07-20 17:18:15.394 [http-nio-8091-exec-3] DEBUG o.springframework.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2020-07-20 17:18:15.396 [http-nio-8091-exec-3] DEBUG o.m.spring.transaction.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@22187076 wrapping com.mysql.cj.jdbc.ConnectionImpl@1ffa9a] will not be managed by Spring
+2020-07-20 17:18:15.397 [http-nio-8091-exec-3] DEBUG com.neuedu.mapper.RuleMapper.getRuleCount - ==>  Preparing: select count(*) from rule where DelMark=1 and deptid=? 
+2020-07-20 17:18:15.398 [http-nio-8091-exec-3] DEBUG com.neuedu.mapper.RuleMapper.getRuleCount - ==> Parameters: 2(String)
+2020-07-20 17:18:15.403 [http-nio-8091-exec-3] DEBUG com.neuedu.mapper.RuleMapper.getRuleCount - <==      Total: 1
+2020-07-20 17:18:15.403 [http-nio-8091-exec-3] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@16ff447]
+2020-07-20 17:18:15.404 [http-nio-8091-exec-3] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2020-07-20 17:18:15.405 [http-nio-8091-exec-3] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1391964] was not registered for synchronization because synchronization is not active
+2020-07-20 17:18:15.407 [http-nio-8091-exec-3] DEBUG o.springframework.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2020-07-20 17:18:15.407 [http-nio-8091-exec-3] DEBUG o.m.spring.transaction.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@20974344 wrapping com.mysql.cj.jdbc.ConnectionImpl@1ffa9a] will not be managed by Spring
+2020-07-20 17:18:15.408 [http-nio-8091-exec-3] DEBUG com.neuedu.mapper.RuleMapper.getRuleList - ==>  Preparing: select a.*,b.realname,c.deptname from rule a,user b,department c where a.userid=b.id and a.deptid=c.id and a.DelMark=1 and a.deptid=? limit ?,? 
+2020-07-20 17:18:15.408 [http-nio-8091-exec-3] DEBUG com.neuedu.mapper.RuleMapper.getRuleList - ==> Parameters: 2(String), 0(Integer), 100(Integer)
+2020-07-20 17:18:15.418 [http-nio-8091-exec-3] DEBUG com.neuedu.mapper.RuleMapper.getRuleList - <==      Total: 5
+2020-07-20 17:18:15.419 [http-nio-8091-exec-3] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1391964]
+2020-07-20 17:18:15.421 [http-nio-8091-exec-3] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-07-20 17:18:15.423 [http-nio-8091-exec-3] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [{totalCount=5, list=[{UserID=5, ID=4, DeptID=2, Week=11111111100000, RuleName=q3, DelMark=1, realnam (truncated)...]
+2020-07-20 17:18:15.434 [http-nio-8091-exec-3] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2020-07-20 17:18:29.206 [http-nio-8091-exec-8] DEBUG org.springframework.web.servlet.DispatcherServlet - POST "/neusys/scheduling/add", parameters={}
+2020-07-20 17:18:29.208 [http-nio-8091-exec-8] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.neuedu.controller.SchedulingController#addScheduling(Map)
+2020-07-20 17:18:29.208 [http-nio-8091-exec-7] DEBUG org.springframework.web.servlet.DispatcherServlet - POST "/neusys/scheduling/add", parameters={}
+2020-07-20 17:18:29.209 [http-nio-8091-exec-7] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.neuedu.controller.SchedulingController#addScheduling(Map)
+2020-07-20 17:18:29.367 [http-nio-8091-exec-8] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [{addStartDate=2020-07-21, addEndDate=2020-07-30, ruleId=4, deptId=2, UserID=5, weeks=11111111100000}]
+2020-07-20 17:18:29.367 [http-nio-8091-exec-7] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [{addStartDate=2020-07-21, addEndDate=2020-07-30, ruleId=5, deptId=2, UserID=4, weeks=11100011100011}]
+2020-07-20 17:18:29.384 [http-nio-8091-exec-8] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2020-07-20 17:18:29.384 [http-nio-8091-exec-7] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2020-07-20 17:18:29.384 [http-nio-8091-exec-7] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1249cce] was not registered for synchronization because synchronization is not active
+2020-07-20 17:18:29.384 [http-nio-8091-exec-8] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6696bf] was not registered for synchronization because synchronization is not active
+2020-07-20 17:18:29.385 [http-nio-8091-exec-7] DEBUG o.springframework.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2020-07-20 17:18:29.385 [http-nio-8091-exec-8] DEBUG o.springframework.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2020-07-20 17:18:29.386 [http-nio-8091-exec-7] DEBUG o.m.spring.transaction.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@10121520 wrapping com.mysql.cj.jdbc.ConnectionImpl@1ffa9a] will not be managed by Spring
+2020-07-20 17:18:29.387 [http-nio-8091-exec-8] DEBUG o.m.spring.transaction.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@30521305 wrapping com.mysql.cj.jdbc.ConnectionImpl@817a87] will not be managed by Spring
+2020-07-20 17:18:29.387 [http-nio-8091-exec-7] DEBUG com.neuedu.mapper.SchedulingMapper.addScheduling - ==>  Preparing: insert into scheduling (SchedDate, DeptID, UserID, Noon, RuleID, DelMark) values ( ?, ?, ?, ?, ?, 1) 
+2020-07-20 17:18:29.387 [http-nio-8091-exec-8] DEBUG com.neuedu.mapper.SchedulingMapper.addScheduling - ==>  Preparing: insert into scheduling (SchedDate, DeptID, UserID, Noon, RuleID, DelMark) values ( ?, ?, ?, ?, ?, 1) 
+2020-07-20 17:18:29.413 [http-nio-8091-exec-8] DEBUG com.neuedu.mapper.SchedulingMapper.addScheduling - ==> Parameters: 2020-07-21 00:00:00.0(Timestamp), 2(Integer), 5(Integer), 上午(String), 4(Integer)
+2020-07-20 17:18:29.413 [http-nio-8091-exec-7] DEBUG com.neuedu.mapper.SchedulingMapper.addScheduling - ==> Parameters: 2020-07-21 00:00:00.0(Timestamp), 2(Integer), 4(Integer), 上午(String), 5(Integer)
+2020-07-20 17:18:29.417 [http-nio-8091-exec-8] DEBUG com.neuedu.mapper.SchedulingMapper.addScheduling - <==    Updates: 1
+2020-07-20 17:18:29.417 [http-nio-8091-exec-8] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6696bf]
+2020-07-20 17:18:29.418 [http-nio-8091-exec-8] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2020-07-20 17:18:29.418 [http-nio-8091-exec-8] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@ade306] was not registered for synchronization because synchronization is not active
+2020-07-20 17:18:29.419 [http-nio-8091-exec-8] DEBUG o.springframework.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2020-07-20 17:18:29.419 [http-nio-8091-exec-8] DEBUG o.m.spring.transaction.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@7154515 wrapping com.mysql.cj.jdbc.ConnectionImpl@817a87] will not be managed by Spring
+2020-07-20 17:18:29.419 [http-nio-8091-exec-7] DEBUG com.neuedu.mapper.SchedulingMapper.addScheduling - <==    Updates: 1
+2020-07-20 17:18:29.420 [http-nio-8091-exec-8] DEBUG com.neuedu.mapper.SchedulingMapper.addScheduling - ==>  Preparing: insert into scheduling (SchedDate, DeptID, UserID, Noon, RuleID, DelMark) values ( ?, ?, ?, ?, ?, 1) 
+2020-07-20 17:18:29.420 [http-nio-8091-exec-7] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1249cce]
+2020-07-20 17:18:29.420 [http-nio-8091-exec-7] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2020-07-20 17:18:29.421 [http-nio-8091-exec-7] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@353324] was not registered for synchronization because synchronization is not active
+2020-07-20 17:18:29.422 [http-nio-8091-exec-8] DEBUG com.neuedu.mapper.SchedulingMapper.addScheduling - ==> Parameters: 2020-07-21 00:00:00.0(Timestamp), 2(Integer), 5(Integer), 下午(String), 4(Integer)
+2020-07-20 17:18:29.421 [http-nio-8091-exec-7] DEBUG o.springframework.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2020-07-20 17:18:29.423 [http-nio-8091-exec-7] DEBUG o.m.spring.transaction.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@22813184 wrapping com.mysql.cj.jdbc.ConnectionImpl@1ffa9a] will not be managed by Spring
+2020-07-20 17:18:29.423 [http-nio-8091-exec-7] DEBUG com.neuedu.mapper.SchedulingMapper.addScheduling - ==>  Preparing: insert into scheduling (SchedDate, DeptID, UserID, Noon, RuleID, DelMark) values ( ?, ?, ?, ?, ?, 1) 
+2020-07-20 17:18:29.425 [http-nio-8091-exec-7] DEBUG com.neuedu.mapper.SchedulingMapper.addScheduling - ==> Parameters: 2020-07-23 00:00:00.0(Timestamp), 2(Integer), 4(Integer), 上午(String), 5(Integer)
+2020-07-20 17:18:29.425 [http-nio-8091-exec-8] DEBUG com.neuedu.mapper.SchedulingMapper.addScheduling - <==    Updates: 1
+2020-07-20 17:18:29.426 [http-nio-8091-exec-8] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@ade306]
+2020-07-20 17:18:29.427 [http-nio-8091-exec-8] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2020-07-20 17:18:29.427 [http-nio-8091-exec-8] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1153a9c] was not registered for synchronization because synchronization is not active
+2020-07-20 17:18:29.427 [http-nio-8091-exec-8] DEBUG o.springframework.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2020-07-20 17:18:29.427 [http-nio-8091-exec-8] DEBUG o.m.spring.transaction.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@15549611 wrapping com.mysql.cj.jdbc.ConnectionImpl@817a87] will not be managed by Spring
+2020-07-20 17:18:29.428 [http-nio-8091-exec-8] DEBUG com.neuedu.mapper.SchedulingMapper.addScheduling - ==>  Preparing: insert into scheduling (SchedDate, DeptID, UserID, Noon, RuleID, DelMark) values ( ?, ?, ?, ?, ?, 1) 
+2020-07-20 17:18:29.430 [http-nio-8091-exec-8] DEBUG com.neuedu.mapper.SchedulingMapper.addScheduling - ==> Parameters: 2020-07-22 00:00:00.0(Timestamp), 2(Integer), 5(Integer), 上午(String), 4(Integer)
+2020-07-20 17:18:29.435 [http-nio-8091-exec-7] DEBUG com.neuedu.mapper.SchedulingMapper.addScheduling - <==    Updates: 1
+2020-07-20 17:18:29.435 [http-nio-8091-exec-7] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@353324]
+2020-07-20 17:18:29.436 [http-nio-8091-exec-7] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2020-07-20 17:18:29.436 [http-nio-8091-exec-7] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@c0c503] was not registered for synchronization because synchronization is not active
+2020-07-20 17:18:29.436 [http-nio-8091-exec-7] DEBUG o.springframework.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2020-07-20 17:18:29.437 [http-nio-8091-exec-7] DEBUG o.m.spring.transaction.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@33387436 wrapping com.mysql.cj.jdbc.ConnectionImpl@1ffa9a] will not be managed by Spring
+2020-07-20 17:18:29.437 [http-nio-8091-exec-7] DEBUG com.neuedu.mapper.SchedulingMapper.addScheduling - ==>  Preparing: insert into scheduling (SchedDate, DeptID, UserID, Noon, RuleID, DelMark) values ( ?, ?, ?, ?, ?, 1) 
+2020-07-20 17:18:29.439 [http-nio-8091-exec-7] DEBUG com.neuedu.mapper.SchedulingMapper.addScheduling - ==> Parameters: 2020-07-23 00:00:00.0(Timestamp), 2(Integer), 4(Integer), 下午(String), 5(Integer)
+2020-07-20 17:18:29.436 [http-nio-8091-exec-8] DEBUG com.neuedu.mapper.SchedulingMapper.addScheduling - <==    Updates: 1
+2020-07-20 17:18:29.440 [http-nio-8091-exec-8] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1153a9c]
+2020-07-20 17:18:29.440 [http-nio-8091-exec-8] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2020-07-20 17:18:29.440 [http-nio-8091-exec-8] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@10c3cb] was not registered for synchronization because synchronization is not active
+2020-07-20 17:18:29.441 [http-nio-8091-exec-8] DEBUG o.springframework.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2020-07-20 17:18:29.441 [http-nio-8091-exec-8] DEBUG o.m.spring.transaction.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@3674558 wrapping com.mysql.cj.jdbc.ConnectionImpl@817a87] will not be managed by Spring
+2020-07-20 17:18:29.441 [http-nio-8091-exec-8] DEBUG com.neuedu.mapper.SchedulingMapper.addScheduling - ==>  Preparing: insert into scheduling (SchedDate, DeptID, UserID, Noon, RuleID, DelMark) values ( ?, ?, ?, ?, ?, 1) 
+2020-07-20 17:18:29.443 [http-nio-8091-exec-8] DEBUG com.neuedu.mapper.SchedulingMapper.addScheduling - ==> Parameters: 2020-07-22 00:00:00.0(Timestamp), 2(Integer), 5(Integer), 下午(String), 4(Integer)
+2020-07-20 17:18:29.445 [http-nio-8091-exec-7] DEBUG com.neuedu.mapper.SchedulingMapper.addScheduling - <==    Updates: 1
+2020-07-20 17:18:29.446 [http-nio-8091-exec-7] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@c0c503]
+2020-07-20 17:18:29.446 [http-nio-8091-exec-7] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2020-07-20 17:18:29.446 [http-nio-8091-exec-7] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@15c3ed9] was not registered for synchronization because synchronization is not active
+2020-07-20 17:18:29.446 [http-nio-8091-exec-8] DEBUG com.neuedu.mapper.SchedulingMapper.addScheduling - <==    Updates: 1
+2020-07-20 17:18:29.447 [http-nio-8091-exec-7] DEBUG o.springframework.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2020-07-20 17:18:29.447 [http-nio-8091-exec-8] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@10c3cb]
+2020-07-20 17:18:29.447 [http-nio-8091-exec-7] DEBUG o.m.spring.transaction.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@33429740 wrapping com.mysql.cj.jdbc.ConnectionImpl@1ffa9a] will not be managed by Spring
+2020-07-20 17:18:29.447 [http-nio-8091-exec-7] DEBUG com.neuedu.mapper.SchedulingMapper.addScheduling - ==>  Preparing: insert into scheduling (SchedDate, DeptID, UserID, Noon, RuleID, DelMark) values ( ?, ?, ?, ?, ?, 1) 
+2020-07-20 17:18:29.447 [http-nio-8091-exec-8] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2020-07-20 17:18:29.448 [http-nio-8091-exec-8] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@13b9be0] was not registered for synchronization because synchronization is not active
+2020-07-20 17:18:29.457 [http-nio-8091-exec-8] DEBUG o.springframework.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2020-07-20 17:18:29.458 [http-nio-8091-exec-8] DEBUG o.m.spring.transaction.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@25495575 wrapping com.mysql.cj.jdbc.ConnectionImpl@817a87] will not be managed by Spring
+2020-07-20 17:18:29.458 [http-nio-8091-exec-8] DEBUG com.neuedu.mapper.SchedulingMapper.addScheduling - ==>  Preparing: insert into scheduling (SchedDate, DeptID, UserID, Noon, RuleID, DelMark) values ( ?, ?, ?, ?, ?, 1) 
+2020-07-20 17:18:29.461 [http-nio-8091-exec-8] DEBUG com.neuedu.mapper.SchedulingMapper.addScheduling - ==> Parameters: 2020-07-23 00:00:00.0(Timestamp), 2(Integer), 5(Integer), 上午(String), 4(Integer)
+2020-07-20 17:18:29.449 [http-nio-8091-exec-7] DEBUG com.neuedu.mapper.SchedulingMapper.addScheduling - ==> Parameters: 2020-07-24 00:00:00.0(Timestamp), 2(Integer), 4(Integer), 上午(String), 5(Integer)
+2020-07-20 17:18:29.466 [http-nio-8091-exec-8] DEBUG com.neuedu.mapper.SchedulingMapper.addScheduling - <==    Updates: 1
+2020-07-20 17:18:29.467 [http-nio-8091-exec-7] DEBUG com.neuedu.mapper.SchedulingMapper.addScheduling - <==    Updates: 1
+2020-07-20 17:18:29.467 [http-nio-8091-exec-7] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@15c3ed9]
+2020-07-20 17:18:29.467 [http-nio-8091-exec-8] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@13b9be0]
+2020-07-20 17:18:29.468 [http-nio-8091-exec-7] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2020-07-20 17:18:29.469 [http-nio-8091-exec-7] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@e32926] was not registered for synchronization because synchronization is not active
+2020-07-20 17:18:29.469 [http-nio-8091-exec-7] DEBUG o.springframework.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2020-07-20 17:18:29.469 [http-nio-8091-exec-7] DEBUG o.m.spring.transaction.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@3636821 wrapping com.mysql.cj.jdbc.ConnectionImpl@1ffa9a] will not be managed by Spring
+2020-07-20 17:18:29.470 [http-nio-8091-exec-7] DEBUG com.neuedu.mapper.SchedulingMapper.addScheduling - ==>  Preparing: insert into scheduling (SchedDate, DeptID, UserID, Noon, RuleID, DelMark) values ( ?, ?, ?, ?, ?, 1) 
+2020-07-20 17:18:29.468 [http-nio-8091-exec-8] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2020-07-20 17:18:29.471 [http-nio-8091-exec-8] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1b6714b] was not registered for synchronization because synchronization is not active
+2020-07-20 17:18:29.472 [http-nio-8091-exec-8] DEBUG o.springframework.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2020-07-20 17:18:29.472 [http-nio-8091-exec-8] DEBUG o.m.spring.transaction.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@12259462 wrapping com.mysql.cj.jdbc.ConnectionImpl@817a87] will not be managed by Spring
+2020-07-20 17:18:29.473 [http-nio-8091-exec-8] DEBUG com.neuedu.mapper.SchedulingMapper.addScheduling - ==>  Preparing: insert into scheduling (SchedDate, DeptID, UserID, Noon, RuleID, DelMark) values ( ?, ?, ?, ?, ?, 1) 
+2020-07-20 17:18:29.473 [http-nio-8091-exec-7] DEBUG com.neuedu.mapper.SchedulingMapper.addScheduling - ==> Parameters: 2020-07-26 00:00:00.0(Timestamp), 2(Integer), 4(Integer), 上午(String), 5(Integer)
+2020-07-20 17:18:29.475 [http-nio-8091-exec-8] DEBUG com.neuedu.mapper.SchedulingMapper.addScheduling - ==> Parameters: 2020-07-23 00:00:00.0(Timestamp), 2(Integer), 5(Integer), 下午(String), 4(Integer)
+2020-07-20 17:18:29.479 [http-nio-8091-exec-7] DEBUG com.neuedu.mapper.SchedulingMapper.addScheduling - <==    Updates: 1
+2020-07-20 17:18:29.479 [http-nio-8091-exec-7] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@e32926]
+2020-07-20 17:18:29.480 [http-nio-8091-exec-8] DEBUG com.neuedu.mapper.SchedulingMapper.addScheduling - <==    Updates: 1
+2020-07-20 17:18:29.480 [http-nio-8091-exec-7] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2020-07-20 17:18:29.480 [http-nio-8091-exec-8] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1b6714b]
+2020-07-20 17:18:29.480 [http-nio-8091-exec-7] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1ac0d9f] was not registered for synchronization because synchronization is not active
+2020-07-20 17:18:29.481 [http-nio-8091-exec-8] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2020-07-20 17:18:29.481 [http-nio-8091-exec-7] DEBUG o.springframework.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2020-07-20 17:18:29.481 [http-nio-8091-exec-8] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@49aa9c] was not registered for synchronization because synchronization is not active
+2020-07-20 17:18:29.481 [http-nio-8091-exec-7] DEBUG o.m.spring.transaction.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@4565653 wrapping com.mysql.cj.jdbc.ConnectionImpl@1ffa9a] will not be managed by Spring
+2020-07-20 17:18:29.481 [http-nio-8091-exec-8] DEBUG o.springframework.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2020-07-20 17:18:29.482 [http-nio-8091-exec-8] DEBUG o.m.spring.transaction.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@11714547 wrapping com.mysql.cj.jdbc.ConnectionImpl@817a87] will not be managed by Spring
+2020-07-20 17:18:29.482 [http-nio-8091-exec-7] DEBUG com.neuedu.mapper.SchedulingMapper.addScheduling - ==>  Preparing: insert into scheduling (SchedDate, DeptID, UserID, Noon, RuleID, DelMark) values ( ?, ?, ?, ?, ?, 1) 
+2020-07-20 17:18:29.482 [http-nio-8091-exec-8] DEBUG com.neuedu.mapper.SchedulingMapper.addScheduling - ==>  Preparing: insert into scheduling (SchedDate, DeptID, UserID, Noon, RuleID, DelMark) values ( ?, ?, ?, ?, ?, 1) 
+2020-07-20 17:18:29.485 [http-nio-8091-exec-8] DEBUG com.neuedu.mapper.SchedulingMapper.addScheduling - ==> Parameters: 2020-07-24 00:00:00.0(Timestamp), 2(Integer), 5(Integer), 上午(String), 4(Integer)
+2020-07-20 17:18:29.485 [http-nio-8091-exec-7] DEBUG com.neuedu.mapper.SchedulingMapper.addScheduling - ==> Parameters: 2020-07-26 00:00:00.0(Timestamp), 2(Integer), 4(Integer), 下午(String), 5(Integer)
+2020-07-20 17:18:29.490 [http-nio-8091-exec-8] DEBUG com.neuedu.mapper.SchedulingMapper.addScheduling - <==    Updates: 1
+2020-07-20 17:18:29.490 [http-nio-8091-exec-7] DEBUG com.neuedu.mapper.SchedulingMapper.addScheduling - <==    Updates: 1
+2020-07-20 17:18:29.491 [http-nio-8091-exec-8] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@49aa9c]
+2020-07-20 17:18:29.491 [http-nio-8091-exec-7] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1ac0d9f]
+2020-07-20 17:18:29.491 [http-nio-8091-exec-8] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2020-07-20 17:18:29.491 [http-nio-8091-exec-7] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2020-07-20 17:18:29.491 [http-nio-8091-exec-8] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1b784c] was not registered for synchronization because synchronization is not active
+2020-07-20 17:18:29.491 [http-nio-8091-exec-7] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@38f550] was not registered for synchronization because synchronization is not active
+2020-07-20 17:18:29.492 [http-nio-8091-exec-8] DEBUG o.springframework.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2020-07-20 17:18:29.492 [http-nio-8091-exec-7] DEBUG o.springframework.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2020-07-20 17:18:29.492 [http-nio-8091-exec-8] DEBUG o.m.spring.transaction.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@31508127 wrapping com.mysql.cj.jdbc.ConnectionImpl@817a87] will not be managed by Spring
+2020-07-20 17:18:29.492 [http-nio-8091-exec-7] DEBUG o.m.spring.transaction.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@26955763 wrapping com.mysql.cj.jdbc.ConnectionImpl@1ffa9a] will not be managed by Spring
+2020-07-20 17:18:29.492 [http-nio-8091-exec-8] DEBUG com.neuedu.mapper.SchedulingMapper.addScheduling - ==>  Preparing: insert into scheduling (SchedDate, DeptID, UserID, Noon, RuleID, DelMark) values ( ?, ?, ?, ?, ?, 1) 
+2020-07-20 17:18:29.492 [http-nio-8091-exec-7] DEBUG com.neuedu.mapper.SchedulingMapper.addScheduling - ==>  Preparing: insert into scheduling (SchedDate, DeptID, UserID, Noon, RuleID, DelMark) values ( ?, ?, ?, ?, ?, 1) 
+2020-07-20 17:18:29.493 [http-nio-8091-exec-8] DEBUG com.neuedu.mapper.SchedulingMapper.addScheduling - ==> Parameters: 2020-07-27 00:00:00.0(Timestamp), 2(Integer), 5(Integer), 上午(String), 4(Integer)
+2020-07-20 17:18:29.497 [http-nio-8091-exec-7] DEBUG com.neuedu.mapper.SchedulingMapper.addScheduling - ==> Parameters: 2020-07-27 00:00:00.0(Timestamp), 2(Integer), 4(Integer), 上午(String), 5(Integer)
+2020-07-20 17:18:29.498 [http-nio-8091-exec-8] DEBUG com.neuedu.mapper.SchedulingMapper.addScheduling - <==    Updates: 1
+2020-07-20 17:18:29.499 [http-nio-8091-exec-8] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1b784c]
+2020-07-20 17:18:29.500 [http-nio-8091-exec-8] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2020-07-20 17:18:29.500 [http-nio-8091-exec-8] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@9cbd7] was not registered for synchronization because synchronization is not active
+2020-07-20 17:18:29.501 [http-nio-8091-exec-7] DEBUG com.neuedu.mapper.SchedulingMapper.addScheduling - <==    Updates: 1
+2020-07-20 17:18:29.501 [http-nio-8091-exec-7] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@38f550]
+2020-07-20 17:18:29.502 [http-nio-8091-exec-7] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2020-07-20 17:18:29.501 [http-nio-8091-exec-8] DEBUG o.springframework.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2020-07-20 17:18:29.502 [http-nio-8091-exec-7] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@14766e7] was not registered for synchronization because synchronization is not active
+2020-07-20 17:18:29.502 [http-nio-8091-exec-8] DEBUG o.m.spring.transaction.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@15266507 wrapping com.mysql.cj.jdbc.ConnectionImpl@817a87] will not be managed by Spring
+2020-07-20 17:18:29.502 [http-nio-8091-exec-7] DEBUG o.springframework.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2020-07-20 17:18:29.502 [http-nio-8091-exec-8] DEBUG com.neuedu.mapper.SchedulingMapper.addScheduling - ==>  Preparing: insert into scheduling (SchedDate, DeptID, UserID, Noon, RuleID, DelMark) values ( ?, ?, ?, ?, ?, 1) 
+2020-07-20 17:18:29.503 [http-nio-8091-exec-7] DEBUG o.m.spring.transaction.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@1721259 wrapping com.mysql.cj.jdbc.ConnectionImpl@1ffa9a] will not be managed by Spring
+2020-07-20 17:18:29.503 [http-nio-8091-exec-7] DEBUG com.neuedu.mapper.SchedulingMapper.addScheduling - ==>  Preparing: insert into scheduling (SchedDate, DeptID, UserID, Noon, RuleID, DelMark) values ( ?, ?, ?, ?, ?, 1) 
+2020-07-20 17:18:29.505 [http-nio-8091-exec-7] DEBUG com.neuedu.mapper.SchedulingMapper.addScheduling - ==> Parameters: 2020-07-27 00:00:00.0(Timestamp), 2(Integer), 4(Integer), 下午(String), 5(Integer)
+2020-07-20 17:18:29.505 [http-nio-8091-exec-8] DEBUG com.neuedu.mapper.SchedulingMapper.addScheduling - ==> Parameters: 2020-07-27 00:00:00.0(Timestamp), 2(Integer), 5(Integer), 下午(String), 4(Integer)
+2020-07-20 17:18:29.508 [http-nio-8091-exec-7] DEBUG com.neuedu.mapper.SchedulingMapper.addScheduling - <==    Updates: 1
+2020-07-20 17:18:29.509 [http-nio-8091-exec-7] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@14766e7]
+2020-07-20 17:18:29.509 [http-nio-8091-exec-8] DEBUG com.neuedu.mapper.SchedulingMapper.addScheduling - <==    Updates: 1
+2020-07-20 17:18:29.509 [http-nio-8091-exec-7] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2020-07-20 17:18:29.509 [http-nio-8091-exec-8] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@9cbd7]
+2020-07-20 17:18:29.510 [http-nio-8091-exec-7] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1e3a041] was not registered for synchronization because synchronization is not active
+2020-07-20 17:18:29.510 [http-nio-8091-exec-8] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2020-07-20 17:18:29.510 [http-nio-8091-exec-7] DEBUG o.springframework.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2020-07-20 17:18:29.510 [http-nio-8091-exec-8] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1785b5e] was not registered for synchronization because synchronization is not active
+2020-07-20 17:18:29.510 [http-nio-8091-exec-7] DEBUG o.m.spring.transaction.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@20752909 wrapping com.mysql.cj.jdbc.ConnectionImpl@1ffa9a] will not be managed by Spring
+2020-07-20 17:18:29.510 [http-nio-8091-exec-8] DEBUG o.springframework.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2020-07-20 17:18:29.511 [http-nio-8091-exec-8] DEBUG o.m.spring.transaction.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@5604816 wrapping com.mysql.cj.jdbc.ConnectionImpl@817a87] will not be managed by Spring
+2020-07-20 17:18:29.511 [http-nio-8091-exec-7] DEBUG com.neuedu.mapper.SchedulingMapper.addScheduling - ==>  Preparing: insert into scheduling (SchedDate, DeptID, UserID, Noon, RuleID, DelMark) values ( ?, ?, ?, ?, ?, 1) 
+2020-07-20 17:18:29.511 [http-nio-8091-exec-8] DEBUG com.neuedu.mapper.SchedulingMapper.addScheduling - ==>  Preparing: insert into scheduling (SchedDate, DeptID, UserID, Noon, RuleID, DelMark) values ( ?, ?, ?, ?, ?, 1) 
+2020-07-20 17:18:29.512 [http-nio-8091-exec-7] DEBUG com.neuedu.mapper.SchedulingMapper.addScheduling - ==> Parameters: 2020-07-28 00:00:00.0(Timestamp), 2(Integer), 4(Integer), 上午(String), 5(Integer)
+2020-07-20 17:18:29.513 [http-nio-8091-exec-8] DEBUG com.neuedu.mapper.SchedulingMapper.addScheduling - ==> Parameters: 2020-07-28 00:00:00.0(Timestamp), 2(Integer), 5(Integer), 上午(String), 4(Integer)
+2020-07-20 17:18:29.516 [http-nio-8091-exec-7] DEBUG com.neuedu.mapper.SchedulingMapper.addScheduling - <==    Updates: 1
+2020-07-20 17:18:29.516 [http-nio-8091-exec-7] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1e3a041]
+2020-07-20 17:18:29.517 [http-nio-8091-exec-7] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2020-07-20 17:18:29.518 [http-nio-8091-exec-7] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@132190c] was not registered for synchronization because synchronization is not active
+2020-07-20 17:18:29.518 [http-nio-8091-exec-8] DEBUG com.neuedu.mapper.SchedulingMapper.addScheduling - <==    Updates: 1
+2020-07-20 17:18:29.518 [http-nio-8091-exec-7] DEBUG o.springframework.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2020-07-20 17:18:29.518 [http-nio-8091-exec-8] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1785b5e]
+2020-07-20 17:18:29.518 [http-nio-8091-exec-7] DEBUG o.m.spring.transaction.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@24727107 wrapping com.mysql.cj.jdbc.ConnectionImpl@1ffa9a] will not be managed by Spring
+2020-07-20 17:18:29.519 [http-nio-8091-exec-7] DEBUG com.neuedu.mapper.SchedulingMapper.addScheduling - ==>  Preparing: insert into scheduling (SchedDate, DeptID, UserID, Noon, RuleID, DelMark) values ( ?, ?, ?, ?, ?, 1) 
+2020-07-20 17:18:29.519 [http-nio-8091-exec-8] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2020-07-20 17:18:29.519 [http-nio-8091-exec-8] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@198d6d2] was not registered for synchronization because synchronization is not active
+2020-07-20 17:18:29.519 [http-nio-8091-exec-8] DEBUG o.springframework.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2020-07-20 17:18:29.519 [http-nio-8091-exec-8] DEBUG o.m.spring.transaction.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@11520084 wrapping com.mysql.cj.jdbc.ConnectionImpl@817a87] will not be managed by Spring
+2020-07-20 17:18:29.520 [http-nio-8091-exec-8] DEBUG com.neuedu.mapper.SchedulingMapper.addScheduling - ==>  Preparing: insert into scheduling (SchedDate, DeptID, UserID, Noon, RuleID, DelMark) values ( ?, ?, ?, ?, ?, 1) 
+2020-07-20 17:18:29.520 [http-nio-8091-exec-7] DEBUG com.neuedu.mapper.SchedulingMapper.addScheduling - ==> Parameters: 2020-07-30 00:00:00.0(Timestamp), 2(Integer), 4(Integer), 上午(String), 5(Integer)
+2020-07-20 17:18:29.521 [http-nio-8091-exec-8] DEBUG com.neuedu.mapper.SchedulingMapper.addScheduling - ==> Parameters: 2020-07-28 00:00:00.0(Timestamp), 2(Integer), 5(Integer), 下午(String), 4(Integer)
+2020-07-20 17:18:29.523 [http-nio-8091-exec-7] DEBUG com.neuedu.mapper.SchedulingMapper.addScheduling - <==    Updates: 1
+2020-07-20 17:18:29.523 [http-nio-8091-exec-7] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@132190c]
+2020-07-20 17:18:29.524 [http-nio-8091-exec-7] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2020-07-20 17:18:29.524 [http-nio-8091-exec-7] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1d716ef] was not registered for synchronization because synchronization is not active
+2020-07-20 17:18:29.524 [http-nio-8091-exec-8] DEBUG com.neuedu.mapper.SchedulingMapper.addScheduling - <==    Updates: 1
+2020-07-20 17:18:29.524 [http-nio-8091-exec-7] DEBUG o.springframework.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2020-07-20 17:18:29.524 [http-nio-8091-exec-8] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@198d6d2]
+2020-07-20 17:18:29.524 [http-nio-8091-exec-7] DEBUG o.m.spring.transaction.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@4755424 wrapping com.mysql.cj.jdbc.ConnectionImpl@1ffa9a] will not be managed by Spring
+2020-07-20 17:18:29.525 [http-nio-8091-exec-7] DEBUG com.neuedu.mapper.SchedulingMapper.addScheduling - ==>  Preparing: insert into scheduling (SchedDate, DeptID, UserID, Noon, RuleID, DelMark) values ( ?, ?, ?, ?, ?, 1) 
+2020-07-20 17:18:29.525 [http-nio-8091-exec-8] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2020-07-20 17:18:29.526 [http-nio-8091-exec-7] DEBUG com.neuedu.mapper.SchedulingMapper.addScheduling - ==> Parameters: 2020-07-30 00:00:00.0(Timestamp), 2(Integer), 4(Integer), 下午(String), 5(Integer)
+2020-07-20 17:18:29.525 [http-nio-8091-exec-8] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1e555d] was not registered for synchronization because synchronization is not active
+2020-07-20 17:18:29.527 [http-nio-8091-exec-8] DEBUG o.springframework.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2020-07-20 17:18:29.527 [http-nio-8091-exec-8] DEBUG o.m.spring.transaction.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@21834186 wrapping com.mysql.cj.jdbc.ConnectionImpl@817a87] will not be managed by Spring
+2020-07-20 17:18:29.527 [http-nio-8091-exec-8] DEBUG com.neuedu.mapper.SchedulingMapper.addScheduling - ==>  Preparing: insert into scheduling (SchedDate, DeptID, UserID, Noon, RuleID, DelMark) values ( ?, ?, ?, ?, ?, 1) 
+2020-07-20 17:18:29.528 [http-nio-8091-exec-8] DEBUG com.neuedu.mapper.SchedulingMapper.addScheduling - ==> Parameters: 2020-07-29 00:00:00.0(Timestamp), 2(Integer), 5(Integer), 上午(String), 4(Integer)
+2020-07-20 17:18:29.531 [http-nio-8091-exec-8] DEBUG com.neuedu.mapper.SchedulingMapper.addScheduling - <==    Updates: 1
+2020-07-20 17:18:29.532 [http-nio-8091-exec-8] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1e555d]
+2020-07-20 17:18:29.532 [http-nio-8091-exec-8] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2020-07-20 17:18:29.532 [http-nio-8091-exec-8] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7553a6] was not registered for synchronization because synchronization is not active
+2020-07-20 17:18:29.532 [http-nio-8091-exec-8] DEBUG o.springframework.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2020-07-20 17:18:29.533 [http-nio-8091-exec-8] DEBUG o.m.spring.transaction.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@9652104 wrapping com.mysql.cj.jdbc.ConnectionImpl@817a87] will not be managed by Spring
+2020-07-20 17:18:29.533 [http-nio-8091-exec-8] DEBUG com.neuedu.mapper.SchedulingMapper.addScheduling - ==>  Preparing: insert into scheduling (SchedDate, DeptID, UserID, Noon, RuleID, DelMark) values ( ?, ?, ?, ?, ?, 1) 
+2020-07-20 17:18:29.534 [http-nio-8091-exec-8] DEBUG com.neuedu.mapper.SchedulingMapper.addScheduling - ==> Parameters: 2020-07-29 00:00:00.0(Timestamp), 2(Integer), 5(Integer), 下午(String), 4(Integer)
+2020-07-20 17:18:29.535 [http-nio-8091-exec-7] DEBUG com.neuedu.mapper.SchedulingMapper.addScheduling - <==    Updates: 1
+2020-07-20 17:18:29.536 [http-nio-8091-exec-7] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1d716ef]
+2020-07-20 17:18:29.537 [http-nio-8091-exec-7] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-07-20 17:18:29.537 [http-nio-8091-exec-8] DEBUG com.neuedu.mapper.SchedulingMapper.addScheduling - <==    Updates: 1
+2020-07-20 17:18:29.538 [http-nio-8091-exec-7] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [{msg=排班计划添加成功！, status=200}]
+2020-07-20 17:18:29.538 [http-nio-8091-exec-8] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7553a6]
+2020-07-20 17:18:29.538 [http-nio-8091-exec-8] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2020-07-20 17:18:29.539 [http-nio-8091-exec-8] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@662ebd] was not registered for synchronization because synchronization is not active
+2020-07-20 17:18:29.539 [http-nio-8091-exec-8] DEBUG o.springframework.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2020-07-20 17:18:29.539 [http-nio-8091-exec-8] DEBUG o.m.spring.transaction.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@13280628 wrapping com.mysql.cj.jdbc.ConnectionImpl@817a87] will not be managed by Spring
+2020-07-20 17:18:29.540 [http-nio-8091-exec-8] DEBUG com.neuedu.mapper.SchedulingMapper.addScheduling - ==>  Preparing: insert into scheduling (SchedDate, DeptID, UserID, Noon, RuleID, DelMark) values ( ?, ?, ?, ?, ?, 1) 
+2020-07-20 17:18:29.541 [http-nio-8091-exec-7] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2020-07-20 17:18:29.541 [http-nio-8091-exec-8] DEBUG com.neuedu.mapper.SchedulingMapper.addScheduling - ==> Parameters: 2020-07-30 00:00:00.0(Timestamp), 2(Integer), 5(Integer), 上午(String), 4(Integer)
+2020-07-20 17:18:29.544 [http-nio-8091-exec-8] DEBUG com.neuedu.mapper.SchedulingMapper.addScheduling - <==    Updates: 1
+2020-07-20 17:18:29.545 [http-nio-8091-exec-8] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@662ebd]
+2020-07-20 17:18:29.545 [http-nio-8091-exec-8] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2020-07-20 17:18:29.545 [http-nio-8091-exec-8] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@11b1ae1] was not registered for synchronization because synchronization is not active
+2020-07-20 17:18:29.546 [http-nio-8091-exec-8] DEBUG o.springframework.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2020-07-20 17:18:29.546 [http-nio-8091-exec-8] DEBUG o.m.spring.transaction.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@3786489 wrapping com.mysql.cj.jdbc.ConnectionImpl@817a87] will not be managed by Spring
+2020-07-20 17:18:29.546 [http-nio-8091-exec-8] DEBUG com.neuedu.mapper.SchedulingMapper.addScheduling - ==>  Preparing: insert into scheduling (SchedDate, DeptID, UserID, Noon, RuleID, DelMark) values ( ?, ?, ?, ?, ?, 1) 
+2020-07-20 17:18:29.548 [http-nio-8091-exec-8] DEBUG com.neuedu.mapper.SchedulingMapper.addScheduling - ==> Parameters: 2020-07-30 00:00:00.0(Timestamp), 2(Integer), 5(Integer), 下午(String), 4(Integer)
+2020-07-20 17:18:29.551 [http-nio-8091-exec-8] DEBUG com.neuedu.mapper.SchedulingMapper.addScheduling - <==    Updates: 1
+2020-07-20 17:18:29.552 [http-nio-8091-exec-8] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@11b1ae1]
+2020-07-20 17:18:29.554 [http-nio-8091-exec-8] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-07-20 17:18:29.554 [http-nio-8091-exec-8] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [{msg=排班计划添加成功！, status=200}]
+2020-07-20 17:18:29.557 [http-nio-8091-exec-8] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2020-07-20 17:18:33.322 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2020-07-20 17:18:33.322 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2020-07-20 17:19:03.324 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2020-07-20 17:19:03.324 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2020-07-20 17:19:33.326 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2020-07-20 17:19:33.326 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2020-07-20 17:20:03.327 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2020-07-20 17:20:03.327 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2020-07-20 17:20:32.390 [http-nio-8091-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/neusys/scheduling/all?page=1&count=10&startDate=&endDate=", parameters={masked}
+2020-07-20 17:20:32.391 [http-nio-8091-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.neuedu.controller.SchedulingController#getSchedulingList(Integer, Integer, String, String)
+2020-07-20 17:20:32.392 [http-nio-8091-exec-1] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2020-07-20 17:20:32.393 [http-nio-8091-exec-1] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@164909b] was not registered for synchronization because synchronization is not active
+2020-07-20 17:20:32.393 [http-nio-8091-exec-1] DEBUG o.springframework.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2020-07-20 17:20:32.395 [http-nio-8091-exec-1] DEBUG o.m.spring.transaction.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@25892683 wrapping com.mysql.cj.jdbc.ConnectionImpl@1ffa9a] will not be managed by Spring
+2020-07-20 17:20:32.395 [http-nio-8091-exec-1] DEBUG c.n.mapper.SchedulingMapper.getSchedulingCount - ==>  Preparing: select count(*) from scheduling a ,user b, department c,registlevel d where a.UserID=b.id and a.DeptID=c.id and b.registLeID=d.id and b.isScheduling='是' 
+2020-07-20 17:20:32.396 [http-nio-8091-exec-1] DEBUG c.n.mapper.SchedulingMapper.getSchedulingCount - ==> Parameters: 
+2020-07-20 17:20:32.493 [http-nio-8091-exec-1] DEBUG c.n.mapper.SchedulingMapper.getSchedulingCount - <==      Total: 1
+2020-07-20 17:20:32.494 [http-nio-8091-exec-1] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@164909b]
+2020-07-20 17:20:32.494 [http-nio-8091-exec-1] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2020-07-20 17:20:32.494 [http-nio-8091-exec-1] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@15ff58] was not registered for synchronization because synchronization is not active
+2020-07-20 17:20:32.495 [http-nio-8091-exec-1] DEBUG o.springframework.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2020-07-20 17:20:32.495 [http-nio-8091-exec-1] DEBUG o.m.spring.transaction.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@24665801 wrapping com.mysql.cj.jdbc.ConnectionImpl@1ffa9a] will not be managed by Spring
+2020-07-20 17:20:32.495 [http-nio-8091-exec-1] DEBUG c.neuedu.mapper.SchedulingMapper.getSchedulingList - ==>  Preparing: select a.id,a.SchedDate,c.deptname,b.realName,a.Noon,d.registname,d.registquota,a.DelMark from scheduling a ,user b, department c,registlevel d where a.UserID=b.id and a.DeptID=c.id and b.registLeID=d.id and b.isScheduling='是' order by a.SchedDate desc limit ?,? 
+2020-07-20 17:20:32.496 [http-nio-8091-exec-1] DEBUG c.neuedu.mapper.SchedulingMapper.getSchedulingList - ==> Parameters: 0(Integer), 10(Integer)
+2020-07-20 17:20:32.647 [http-nio-8091-exec-1] DEBUG c.neuedu.mapper.SchedulingMapper.getSchedulingList - <==      Total: 10
+2020-07-20 17:20:32.647 [http-nio-8091-exec-1] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@15ff58]
+2020-07-20 17:20:32.648 [http-nio-8091-exec-1] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-07-20 17:20:32.649 [http-nio-8091-exec-1] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [{totalCount=12990, list=[{realName=霍去病, registquota=30, SchedDate=2020-08-10, Noon=下午, id=13267, dep (truncated)...]
+2020-07-20 17:20:32.651 [http-nio-8091-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2020-07-20 17:20:33.334 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2020-07-20 17:20:33.335 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2020-07-20 17:21:03.337 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2020-07-20 17:21:03.337 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2020-07-20 17:21:16.318 [http-nio-8091-exec-3] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/neusys/scheduling/all?page=1299&count=10&startDate=&endDate=", parameters={masked}
+2020-07-20 17:21:16.319 [http-nio-8091-exec-3] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.neuedu.controller.SchedulingController#getSchedulingList(Integer, Integer, String, String)
+2020-07-20 17:21:16.321 [http-nio-8091-exec-3] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2020-07-20 17:21:16.323 [http-nio-8091-exec-3] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@10e54e1] was not registered for synchronization because synchronization is not active
+2020-07-20 17:21:16.324 [http-nio-8091-exec-3] DEBUG o.springframework.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2020-07-20 17:21:16.325 [http-nio-8091-exec-3] DEBUG o.m.spring.transaction.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@31294554 wrapping com.mysql.cj.jdbc.ConnectionImpl@1ffa9a] will not be managed by Spring
+2020-07-20 17:21:16.325 [http-nio-8091-exec-3] DEBUG c.n.mapper.SchedulingMapper.getSchedulingCount - ==>  Preparing: select count(*) from scheduling a ,user b, department c,registlevel d where a.UserID=b.id and a.DeptID=c.id and b.registLeID=d.id and b.isScheduling='是' 
+2020-07-20 17:21:16.326 [http-nio-8091-exec-3] DEBUG c.n.mapper.SchedulingMapper.getSchedulingCount - ==> Parameters: 
+2020-07-20 17:21:16.425 [http-nio-8091-exec-3] DEBUG c.n.mapper.SchedulingMapper.getSchedulingCount - <==      Total: 1
+2020-07-20 17:21:16.431 [http-nio-8091-exec-3] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@10e54e1]
+2020-07-20 17:21:16.431 [http-nio-8091-exec-3] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2020-07-20 17:21:16.432 [http-nio-8091-exec-3] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@880b62] was not registered for synchronization because synchronization is not active
+2020-07-20 17:21:16.432 [http-nio-8091-exec-3] DEBUG o.springframework.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2020-07-20 17:21:16.433 [http-nio-8091-exec-3] DEBUG o.m.spring.transaction.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@33356942 wrapping com.mysql.cj.jdbc.ConnectionImpl@1ffa9a] will not be managed by Spring
+2020-07-20 17:21:16.433 [http-nio-8091-exec-3] DEBUG c.neuedu.mapper.SchedulingMapper.getSchedulingList - ==>  Preparing: select a.id,a.SchedDate,c.deptname,b.realName,a.Noon,d.registname,d.registquota,a.DelMark from scheduling a ,user b, department c,registlevel d where a.UserID=b.id and a.DeptID=c.id and b.registLeID=d.id and b.isScheduling='是' order by a.SchedDate desc limit ?,? 
+2020-07-20 17:21:16.434 [http-nio-8091-exec-3] DEBUG c.neuedu.mapper.SchedulingMapper.getSchedulingList - ==> Parameters: 12980(Integer), 10(Integer)
+2020-07-20 17:21:16.624 [http-nio-8091-exec-3] DEBUG c.neuedu.mapper.SchedulingMapper.getSchedulingList - <==      Total: 10
+2020-07-20 17:21:16.625 [http-nio-8091-exec-3] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@880b62]
+2020-07-20 17:21:16.626 [http-nio-8091-exec-3] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-07-20 17:21:16.626 [http-nio-8091-exec-3] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [{totalCount=12990, list=[{realName=霍去病, registquota=30, SchedDate=2019-04-01, Noon=上午, id=56, deptna (truncated)...]
+2020-07-20 17:21:16.629 [http-nio-8091-exec-3] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2020-07-20 17:21:22.354 [http-nio-8091-exec-6] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/neusys/scheduling/all?page=1298&count=10&startDate=&endDate=", parameters={masked}
+2020-07-20 17:21:22.355 [http-nio-8091-exec-6] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.neuedu.controller.SchedulingController#getSchedulingList(Integer, Integer, String, String)
+2020-07-20 17:21:22.356 [http-nio-8091-exec-6] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2020-07-20 17:21:22.357 [http-nio-8091-exec-6] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@9fb466] was not registered for synchronization because synchronization is not active
+2020-07-20 17:21:22.358 [http-nio-8091-exec-6] DEBUG o.springframework.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2020-07-20 17:21:22.359 [http-nio-8091-exec-6] DEBUG o.m.spring.transaction.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@5789189 wrapping com.mysql.cj.jdbc.ConnectionImpl@1ffa9a] will not be managed by Spring
+2020-07-20 17:21:22.359 [http-nio-8091-exec-6] DEBUG c.n.mapper.SchedulingMapper.getSchedulingCount - ==>  Preparing: select count(*) from scheduling a ,user b, department c,registlevel d where a.UserID=b.id and a.DeptID=c.id and b.registLeID=d.id and b.isScheduling='是' 
+2020-07-20 17:21:22.360 [http-nio-8091-exec-6] DEBUG c.n.mapper.SchedulingMapper.getSchedulingCount - ==> Parameters: 
+2020-07-20 17:21:22.471 [http-nio-8091-exec-6] DEBUG c.n.mapper.SchedulingMapper.getSchedulingCount - <==      Total: 1
+2020-07-20 17:21:22.472 [http-nio-8091-exec-6] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@9fb466]
+2020-07-20 17:21:22.472 [http-nio-8091-exec-6] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2020-07-20 17:21:22.473 [http-nio-8091-exec-6] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1655c3e] was not registered for synchronization because synchronization is not active
+2020-07-20 17:21:22.473 [http-nio-8091-exec-6] DEBUG o.springframework.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2020-07-20 17:21:22.474 [http-nio-8091-exec-6] DEBUG o.m.spring.transaction.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@4514096 wrapping com.mysql.cj.jdbc.ConnectionImpl@1ffa9a] will not be managed by Spring
+2020-07-20 17:21:22.474 [http-nio-8091-exec-6] DEBUG c.neuedu.mapper.SchedulingMapper.getSchedulingList - ==>  Preparing: select a.id,a.SchedDate,c.deptname,b.realName,a.Noon,d.registname,d.registquota,a.DelMark from scheduling a ,user b, department c,registlevel d where a.UserID=b.id and a.DeptID=c.id and b.registLeID=d.id and b.isScheduling='是' order by a.SchedDate desc limit ?,? 
+2020-07-20 17:21:22.475 [http-nio-8091-exec-6] DEBUG c.neuedu.mapper.SchedulingMapper.getSchedulingList - ==> Parameters: 12970(Integer), 10(Integer)
+2020-07-20 17:21:22.689 [http-nio-8091-exec-6] DEBUG c.neuedu.mapper.SchedulingMapper.getSchedulingList - <==      Total: 10
+2020-07-20 17:21:22.690 [http-nio-8091-exec-6] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1655c3e]
+2020-07-20 17:21:22.691 [http-nio-8091-exec-6] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-07-20 17:21:22.692 [http-nio-8091-exec-6] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [{totalCount=12990, list=[{realName=扁鹊, registquota=20, SchedDate=2019-04-02, Noon=下午, id=69, deptnam (truncated)...]
+2020-07-20 17:21:22.695 [http-nio-8091-exec-6] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2020-07-20 17:21:27.159 [http-nio-8091-exec-7] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/neusys/scheduling/all?page=1295&count=10&startDate=&endDate=", parameters={masked}
+2020-07-20 17:21:27.160 [http-nio-8091-exec-7] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.neuedu.controller.SchedulingController#getSchedulingList(Integer, Integer, String, String)
+2020-07-20 17:21:27.162 [http-nio-8091-exec-7] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2020-07-20 17:21:27.163 [http-nio-8091-exec-7] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@33f870] was not registered for synchronization because synchronization is not active
+2020-07-20 17:21:27.165 [http-nio-8091-exec-7] DEBUG o.springframework.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2020-07-20 17:21:27.174 [http-nio-8091-exec-7] DEBUG o.m.spring.transaction.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@16141401 wrapping com.mysql.cj.jdbc.ConnectionImpl@1ffa9a] will not be managed by Spring
+2020-07-20 17:21:27.176 [http-nio-8091-exec-7] DEBUG c.n.mapper.SchedulingMapper.getSchedulingCount - ==>  Preparing: select count(*) from scheduling a ,user b, department c,registlevel d where a.UserID=b.id and a.DeptID=c.id and b.registLeID=d.id and b.isScheduling='是' 
+2020-07-20 17:21:27.177 [http-nio-8091-exec-7] DEBUG c.n.mapper.SchedulingMapper.getSchedulingCount - ==> Parameters: 
+2020-07-20 17:21:27.274 [http-nio-8091-exec-7] DEBUG c.n.mapper.SchedulingMapper.getSchedulingCount - <==      Total: 1
+2020-07-20 17:21:27.275 [http-nio-8091-exec-7] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@33f870]
+2020-07-20 17:21:27.276 [http-nio-8091-exec-7] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2020-07-20 17:21:27.276 [http-nio-8091-exec-7] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1dc4c7c] was not registered for synchronization because synchronization is not active
+2020-07-20 17:21:27.276 [http-nio-8091-exec-7] DEBUG o.springframework.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2020-07-20 17:21:27.277 [http-nio-8091-exec-7] DEBUG o.m.spring.transaction.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@13753615 wrapping com.mysql.cj.jdbc.ConnectionImpl@1ffa9a] will not be managed by Spring
+2020-07-20 17:21:27.277 [http-nio-8091-exec-7] DEBUG c.neuedu.mapper.SchedulingMapper.getSchedulingList - ==>  Preparing: select a.id,a.SchedDate,c.deptname,b.realName,a.Noon,d.registname,d.registquota,a.DelMark from scheduling a ,user b, department c,registlevel d where a.UserID=b.id and a.DeptID=c.id and b.registLeID=d.id and b.isScheduling='是' order by a.SchedDate desc limit ?,? 
+2020-07-20 17:21:27.278 [http-nio-8091-exec-7] DEBUG c.neuedu.mapper.SchedulingMapper.getSchedulingList - ==> Parameters: 12940(Integer), 10(Integer)
+2020-07-20 17:21:27.464 [http-nio-8091-exec-7] DEBUG c.neuedu.mapper.SchedulingMapper.getSchedulingList - <==      Total: 10
+2020-07-20 17:21:27.465 [http-nio-8091-exec-7] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1dc4c7c]
+2020-07-20 17:21:27.467 [http-nio-8091-exec-7] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-07-20 17:21:27.468 [http-nio-8091-exec-7] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [{totalCount=12990, list=[{realName=hello, registquota=30, SchedDate=2020-04-13, Noon=上午, id=279, dep (truncated)...]
+2020-07-20 17:21:27.472 [http-nio-8091-exec-7] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2020-07-20 17:21:33.347 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2020-07-20 17:21:33.347 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2020-07-20 17:21:36.099 [http-nio-8091-exec-9] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/neusys/scheduling/all?page=1293&count=10&startDate=&endDate=", parameters={masked}
+2020-07-20 17:21:36.100 [http-nio-8091-exec-9] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.neuedu.controller.SchedulingController#getSchedulingList(Integer, Integer, String, String)
+2020-07-20 17:21:36.105 [http-nio-8091-exec-9] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2020-07-20 17:21:36.105 [http-nio-8091-exec-9] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@efe892] was not registered for synchronization because synchronization is not active
+2020-07-20 17:21:36.106 [http-nio-8091-exec-9] DEBUG o.springframework.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2020-07-20 17:21:36.107 [http-nio-8091-exec-9] DEBUG o.m.spring.transaction.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@2621823 wrapping com.mysql.cj.jdbc.ConnectionImpl@1ffa9a] will not be managed by Spring
+2020-07-20 17:21:36.107 [http-nio-8091-exec-9] DEBUG c.n.mapper.SchedulingMapper.getSchedulingCount - ==>  Preparing: select count(*) from scheduling a ,user b, department c,registlevel d where a.UserID=b.id and a.DeptID=c.id and b.registLeID=d.id and b.isScheduling='是' 
+2020-07-20 17:21:36.107 [http-nio-8091-exec-9] DEBUG c.n.mapper.SchedulingMapper.getSchedulingCount - ==> Parameters: 
+2020-07-20 17:21:36.197 [http-nio-8091-exec-9] DEBUG c.n.mapper.SchedulingMapper.getSchedulingCount - <==      Total: 1
+2020-07-20 17:21:36.198 [http-nio-8091-exec-9] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@efe892]
+2020-07-20 17:21:36.198 [http-nio-8091-exec-9] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2020-07-20 17:21:36.199 [http-nio-8091-exec-9] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7dd6cc] was not registered for synchronization because synchronization is not active
+2020-07-20 17:21:36.199 [http-nio-8091-exec-9] DEBUG o.springframework.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2020-07-20 17:21:36.199 [http-nio-8091-exec-9] DEBUG o.m.spring.transaction.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@2890309 wrapping com.mysql.cj.jdbc.ConnectionImpl@1ffa9a] will not be managed by Spring
+2020-07-20 17:21:36.200 [http-nio-8091-exec-9] DEBUG c.neuedu.mapper.SchedulingMapper.getSchedulingList - ==>  Preparing: select a.id,a.SchedDate,c.deptname,b.realName,a.Noon,d.registname,d.registquota,a.DelMark from scheduling a ,user b, department c,registlevel d where a.UserID=b.id and a.DeptID=c.id and b.registLeID=d.id and b.isScheduling='是' order by a.SchedDate desc limit ?,? 
+2020-07-20 17:21:36.200 [http-nio-8091-exec-9] DEBUG c.neuedu.mapper.SchedulingMapper.getSchedulingList - ==> Parameters: 12920(Integer), 10(Integer)
+2020-07-20 17:21:36.313 [http-nio-8091-exec-9] DEBUG c.neuedu.mapper.SchedulingMapper.getSchedulingList - <==      Total: 10
+2020-07-20 17:21:36.314 [http-nio-8091-exec-9] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7dd6cc]
+2020-07-20 17:21:36.315 [http-nio-8091-exec-9] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-07-20 17:21:36.315 [http-nio-8091-exec-9] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [{totalCount=12990, list=[{realName=汤姆, registquota=30, SchedDate=2020-04-16, Noon=上午, id=229, deptna (truncated)...]
+2020-07-20 17:21:36.318 [http-nio-8091-exec-9] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2020-07-20 17:21:38.074 [http-nio-8091-exec-10] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/neusys/scheduling/all?page=1292&count=10&startDate=&endDate=", parameters={masked}
+2020-07-20 17:21:38.075 [http-nio-8091-exec-10] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.neuedu.controller.SchedulingController#getSchedulingList(Integer, Integer, String, String)
+2020-07-20 17:21:38.078 [http-nio-8091-exec-10] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2020-07-20 17:21:38.078 [http-nio-8091-exec-10] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@14c2098] was not registered for synchronization because synchronization is not active
+2020-07-20 17:21:38.079 [http-nio-8091-exec-10] DEBUG o.springframework.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2020-07-20 17:21:38.080 [http-nio-8091-exec-10] DEBUG o.m.spring.transaction.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@25940417 wrapping com.mysql.cj.jdbc.ConnectionImpl@1ffa9a] will not be managed by Spring
+2020-07-20 17:21:38.080 [http-nio-8091-exec-10] DEBUG c.n.mapper.SchedulingMapper.getSchedulingCount - ==>  Preparing: select count(*) from scheduling a ,user b, department c,registlevel d where a.UserID=b.id and a.DeptID=c.id and b.registLeID=d.id and b.isScheduling='是' 
+2020-07-20 17:21:38.081 [http-nio-8091-exec-10] DEBUG c.n.mapper.SchedulingMapper.getSchedulingCount - ==> Parameters: 
+2020-07-20 17:21:38.193 [http-nio-8091-exec-10] DEBUG c.n.mapper.SchedulingMapper.getSchedulingCount - <==      Total: 1
+2020-07-20 17:21:38.194 [http-nio-8091-exec-10] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@14c2098]
+2020-07-20 17:21:38.194 [http-nio-8091-exec-10] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2020-07-20 17:21:38.194 [http-nio-8091-exec-10] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@b6dbfa] was not registered for synchronization because synchronization is not active
+2020-07-20 17:21:38.196 [http-nio-8091-exec-10] DEBUG o.springframework.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2020-07-20 17:21:38.196 [http-nio-8091-exec-10] DEBUG o.m.spring.transaction.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@15099220 wrapping com.mysql.cj.jdbc.ConnectionImpl@1ffa9a] will not be managed by Spring
+2020-07-20 17:21:38.196 [http-nio-8091-exec-10] DEBUG c.neuedu.mapper.SchedulingMapper.getSchedulingList - ==>  Preparing: select a.id,a.SchedDate,c.deptname,b.realName,a.Noon,d.registname,d.registquota,a.DelMark from scheduling a ,user b, department c,registlevel d where a.UserID=b.id and a.DeptID=c.id and b.registLeID=d.id and b.isScheduling='是' order by a.SchedDate desc limit ?,? 
+2020-07-20 17:21:38.197 [http-nio-8091-exec-10] DEBUG c.neuedu.mapper.SchedulingMapper.getSchedulingList - ==> Parameters: 12910(Integer), 10(Integer)
+2020-07-20 17:21:38.399 [http-nio-8091-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/neusys/scheduling/all?page=1291&count=10&startDate=&endDate=", parameters={masked}
+2020-07-20 17:21:38.399 [http-nio-8091-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.neuedu.controller.SchedulingController#getSchedulingList(Integer, Integer, String, String)
+2020-07-20 17:21:38.401 [http-nio-8091-exec-1] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2020-07-20 17:21:38.402 [http-nio-8091-exec-1] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@a5334e] was not registered for synchronization because synchronization is not active
+2020-07-20 17:21:38.403 [http-nio-8091-exec-1] DEBUG o.springframework.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2020-07-20 17:21:38.404 [http-nio-8091-exec-1] DEBUG o.m.spring.transaction.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@26991632 wrapping com.mysql.cj.jdbc.ConnectionImpl@817a87] will not be managed by Spring
+2020-07-20 17:21:38.405 [http-nio-8091-exec-1] DEBUG c.n.mapper.SchedulingMapper.getSchedulingCount - ==>  Preparing: select count(*) from scheduling a ,user b, department c,registlevel d where a.UserID=b.id and a.DeptID=c.id and b.registLeID=d.id and b.isScheduling='是' 
+2020-07-20 17:21:38.405 [http-nio-8091-exec-1] DEBUG c.n.mapper.SchedulingMapper.getSchedulingCount - ==> Parameters: 
+2020-07-20 17:21:38.430 [http-nio-8091-exec-10] DEBUG c.neuedu.mapper.SchedulingMapper.getSchedulingList - <==      Total: 10
+2020-07-20 17:21:38.433 [http-nio-8091-exec-10] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@b6dbfa]
+2020-07-20 17:21:38.434 [http-nio-8091-exec-10] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-07-20 17:21:38.435 [http-nio-8091-exec-10] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [{totalCount=12990, list=[{realName=chengxx, registquota=20, SchedDate=2020-04-20, Noon=下午, id=339, d (truncated)...]
+2020-07-20 17:21:38.439 [http-nio-8091-exec-10] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2020-07-20 17:21:38.489 [http-nio-8091-exec-1] DEBUG c.n.mapper.SchedulingMapper.getSchedulingCount - <==      Total: 1
+2020-07-20 17:21:38.491 [http-nio-8091-exec-1] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@a5334e]
+2020-07-20 17:21:38.491 [http-nio-8091-exec-1] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2020-07-20 17:21:38.491 [http-nio-8091-exec-1] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@33bdc] was not registered for synchronization because synchronization is not active
+2020-07-20 17:21:38.492 [http-nio-8091-exec-1] DEBUG o.springframework.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2020-07-20 17:21:38.493 [http-nio-8091-exec-1] DEBUG o.m.spring.transaction.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@22497233 wrapping com.mysql.cj.jdbc.ConnectionImpl@817a87] will not be managed by Spring
+2020-07-20 17:21:38.493 [http-nio-8091-exec-1] DEBUG c.neuedu.mapper.SchedulingMapper.getSchedulingList - ==>  Preparing: select a.id,a.SchedDate,c.deptname,b.realName,a.Noon,d.registname,d.registquota,a.DelMark from scheduling a ,user b, department c,registlevel d where a.UserID=b.id and a.DeptID=c.id and b.registLeID=d.id and b.isScheduling='是' order by a.SchedDate desc limit ?,? 
+2020-07-20 17:21:38.494 [http-nio-8091-exec-1] DEBUG c.neuedu.mapper.SchedulingMapper.getSchedulingList - ==> Parameters: 12900(Integer), 10(Integer)
+2020-07-20 17:21:38.587 [http-nio-8091-exec-2] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/neusys/scheduling/all?page=1290&count=10&startDate=&endDate=", parameters={masked}
+2020-07-20 17:21:38.588 [http-nio-8091-exec-2] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.neuedu.controller.SchedulingController#getSchedulingList(Integer, Integer, String, String)
+2020-07-20 17:21:38.590 [http-nio-8091-exec-2] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2020-07-20 17:21:38.591 [http-nio-8091-exec-2] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@396348] was not registered for synchronization because synchronization is not active
+2020-07-20 17:21:38.591 [http-nio-8091-exec-2] DEBUG o.springframework.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2020-07-20 17:21:38.592 [http-nio-8091-exec-2] DEBUG o.m.spring.transaction.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@16687039 wrapping com.mysql.cj.jdbc.ConnectionImpl@1ffa9a] will not be managed by Spring
+2020-07-20 17:21:38.592 [http-nio-8091-exec-2] DEBUG c.n.mapper.SchedulingMapper.getSchedulingCount - ==>  Preparing: select count(*) from scheduling a ,user b, department c,registlevel d where a.UserID=b.id and a.DeptID=c.id and b.registLeID=d.id and b.isScheduling='是' 
+2020-07-20 17:21:38.593 [http-nio-8091-exec-2] DEBUG c.n.mapper.SchedulingMapper.getSchedulingCount - ==> Parameters: 
+2020-07-20 17:21:38.739 [http-nio-8091-exec-1] DEBUG c.neuedu.mapper.SchedulingMapper.getSchedulingList - <==      Total: 10
+2020-07-20 17:21:38.740 [http-nio-8091-exec-1] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@33bdc]
+2020-07-20 17:21:38.741 [http-nio-8091-exec-2] DEBUG c.n.mapper.SchedulingMapper.getSchedulingCount - <==      Total: 1
+2020-07-20 17:21:38.741 [http-nio-8091-exec-2] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@396348]
+2020-07-20 17:21:38.741 [http-nio-8091-exec-2] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2020-07-20 17:21:38.742 [http-nio-8091-exec-1] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-07-20 17:21:38.742 [http-nio-8091-exec-2] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1c39584] was not registered for synchronization because synchronization is not active
+2020-07-20 17:21:38.743 [http-nio-8091-exec-2] DEBUG o.springframework.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2020-07-20 17:21:38.743 [http-nio-8091-exec-1] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [{totalCount=12990, list=[{realName=汤姆, registquota=30, SchedDate=2020-04-21, Noon=下午, id=240, deptna (truncated)...]
+2020-07-20 17:21:38.743 [http-nio-8091-exec-2] DEBUG o.m.spring.transaction.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@4165271 wrapping com.mysql.cj.jdbc.ConnectionImpl@1ffa9a] will not be managed by Spring
+2020-07-20 17:21:38.743 [http-nio-8091-exec-2] DEBUG c.neuedu.mapper.SchedulingMapper.getSchedulingList - ==>  Preparing: select a.id,a.SchedDate,c.deptname,b.realName,a.Noon,d.registname,d.registquota,a.DelMark from scheduling a ,user b, department c,registlevel d where a.UserID=b.id and a.DeptID=c.id and b.registLeID=d.id and b.isScheduling='是' order by a.SchedDate desc limit ?,? 
+2020-07-20 17:21:38.744 [http-nio-8091-exec-2] DEBUG c.neuedu.mapper.SchedulingMapper.getSchedulingList - ==> Parameters: 12890(Integer), 10(Integer)
+2020-07-20 17:21:38.747 [http-nio-8091-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2020-07-20 17:21:38.770 [http-nio-8091-exec-3] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/neusys/scheduling/all?page=1289&count=10&startDate=&endDate=", parameters={masked}
+2020-07-20 17:21:38.771 [http-nio-8091-exec-3] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.neuedu.controller.SchedulingController#getSchedulingList(Integer, Integer, String, String)
+2020-07-20 17:21:38.773 [http-nio-8091-exec-3] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2020-07-20 17:21:38.773 [http-nio-8091-exec-3] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@162c5c4] was not registered for synchronization because synchronization is not active
+2020-07-20 17:21:38.773 [http-nio-8091-exec-3] DEBUG o.springframework.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2020-07-20 17:21:38.774 [http-nio-8091-exec-3] DEBUG o.m.spring.transaction.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@31656913 wrapping com.mysql.cj.jdbc.ConnectionImpl@817a87] will not be managed by Spring
+2020-07-20 17:21:38.774 [http-nio-8091-exec-3] DEBUG c.n.mapper.SchedulingMapper.getSchedulingCount - ==>  Preparing: select count(*) from scheduling a ,user b, department c,registlevel d where a.UserID=b.id and a.DeptID=c.id and b.registLeID=d.id and b.isScheduling='是' 
+2020-07-20 17:21:38.774 [http-nio-8091-exec-3] DEBUG c.n.mapper.SchedulingMapper.getSchedulingCount - ==> Parameters: 
+2020-07-20 17:21:38.893 [http-nio-8091-exec-3] DEBUG c.n.mapper.SchedulingMapper.getSchedulingCount - <==      Total: 1
+2020-07-20 17:21:38.895 [http-nio-8091-exec-3] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@162c5c4]
+2020-07-20 17:21:38.896 [http-nio-8091-exec-3] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2020-07-20 17:21:38.896 [http-nio-8091-exec-3] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@14edb1c] was not registered for synchronization because synchronization is not active
+2020-07-20 17:21:38.897 [http-nio-8091-exec-3] DEBUG o.springframework.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2020-07-20 17:21:38.897 [http-nio-8091-exec-3] DEBUG o.m.spring.transaction.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@2586196 wrapping com.mysql.cj.jdbc.ConnectionImpl@817a87] will not be managed by Spring
+2020-07-20 17:21:38.897 [http-nio-8091-exec-3] DEBUG c.neuedu.mapper.SchedulingMapper.getSchedulingList - ==>  Preparing: select a.id,a.SchedDate,c.deptname,b.realName,a.Noon,d.registname,d.registquota,a.DelMark from scheduling a ,user b, department c,registlevel d where a.UserID=b.id and a.DeptID=c.id and b.registLeID=d.id and b.isScheduling='是' order by a.SchedDate desc limit ?,? 
+2020-07-20 17:21:38.898 [http-nio-8091-exec-3] DEBUG c.neuedu.mapper.SchedulingMapper.getSchedulingList - ==> Parameters: 12880(Integer), 10(Integer)
+2020-07-20 17:21:38.937 [http-nio-8091-exec-2] DEBUG c.neuedu.mapper.SchedulingMapper.getSchedulingList - <==      Total: 10
+2020-07-20 17:21:38.938 [http-nio-8091-exec-2] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1c39584]
+2020-07-20 17:21:38.939 [http-nio-8091-exec-2] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-07-20 17:21:38.940 [http-nio-8091-exec-2] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [{totalCount=12990, list=[{realName=汤姆, registquota=30, SchedDate=2020-04-23, Noon=下午, id=244, deptna (truncated)...]
+2020-07-20 17:21:38.943 [http-nio-8091-exec-2] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2020-07-20 17:21:39.097 [http-nio-8091-exec-3] DEBUG c.neuedu.mapper.SchedulingMapper.getSchedulingList - <==      Total: 10
+2020-07-20 17:21:39.098 [http-nio-8091-exec-3] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@14edb1c]
+2020-07-20 17:21:39.099 [http-nio-8091-exec-3] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-07-20 17:21:39.100 [http-nio-8091-exec-3] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [{totalCount=12990, list=[{realName=chengxx, registquota=20, SchedDate=2020-04-26, Noon=上午, id=344, d (truncated)...]
+2020-07-20 17:21:39.103 [http-nio-8091-exec-3] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2020-07-20 17:22:03.349 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2020-07-20 17:22:03.350 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2020-07-20 17:22:33.353 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2020-07-20 17:22:33.354 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2020-07-20 17:23:03.358 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2020-07-20 17:23:03.359 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2020-07-20 17:23:33.361 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2020-07-20 17:23:33.361 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool is at sufficient level.

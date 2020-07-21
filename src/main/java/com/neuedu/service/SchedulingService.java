@@ -12,4 +12,6 @@ public interface SchedulingService {
 	int getSchedulingCount(String starDate, String endDate);
 
     int addScheduling(Map<String, Object> schdulingMap);
+
+    List<Map<String, Object>> getDeptByVDateAndNoon(String visitDate, String noon);
 }

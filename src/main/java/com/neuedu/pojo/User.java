@@ -1,7 +1,7 @@
 package com.neuedu.pojo;
 
 public class User {
-    private String id;
+    private int id;
     private String userName;
     private String password;
     private String realName;
@@ -16,10 +16,10 @@ public class User {
 
     }
 
-    public String getId() {
+    public int getId() {
         return id;
     }
-    public void setId(String id) {
+    public void setId(int id) {
         this.id = id;
     }
     public String getUserName() {
@@ -92,4 +92,6 @@ public class User {
                 ", delMark='" + delMark + '\'' +
                 '}';
     }
+
 }
+

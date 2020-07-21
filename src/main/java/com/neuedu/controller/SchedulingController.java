@@ -47,5 +47,12 @@ public class SchedulingController {
         }
         return map;
     }
-
+    //根据看诊日期和午别查询科室列表
+    @RequestMapping(value = "/getDeptByVDateAndNoon", method = RequestMethod.GET)
+    public Map<String, Object> getDeptByVDateAndNoon(@RequestParam("visitDate") String visitDate,@RequestParam("noon") String noon) {
+        List<Map<String,Object>> list = schedulingService.getDeptByVDateAndNoon(visitDate,noon);
+        Map<String, Object> map = new HashMap<>();
+        map.put("list", list);
+        return map;
+    }
 }
