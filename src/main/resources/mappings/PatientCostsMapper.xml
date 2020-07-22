@@ -32,6 +32,95 @@
     delete from patientcosts
     where ID = #{id,jdbcType=INTEGER}
   </delete>
+  <!--插入挂号费用明细-->
+  <insert id="addPatientCosts">
+    insert into patientcosts
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+
+      <if test="RegistID != null">
+        RegistID,
+      </if>
+      <if test="InvoiceID != null">
+        InvoiceID,
+      </if>
+      <if test="ItemID != null">
+        ItemID,
+      </if>
+      <if test="ItemType != null">
+        ItemType,
+      </if>
+      <if test="Name != null">
+        Name,
+      </if>
+      <if test="Price != null">
+        Price,
+      </if>
+      <if test="Amount != null">
+        Amount,
+      </if>
+      <if test="DeptID != null">
+        DeptID,
+      </if>
+      <if test="Createtime != null">
+        Createtime,
+      </if>
+      <if test="CreateOperID != null">
+        CreateOperID,
+      </if>
+      <if test="PayTime != null">
+        PayTime,
+      </if>
+      <if test="RegisterID != null">
+        RegisterID,
+      </if>
+      <if test="FeeType != null">
+        FeeType,
+      </if>
+
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+
+      <if test="RegistID != null">
+        #{RegistID,jdbcType=INTEGER},
+      </if>
+      <if test="InvoiceID != null">
+        #{InvoiceID,jdbcType=INTEGER},
+      </if>
+      <if test="ItemID != null">
+        #{ItemID,jdbcType=INTEGER},
+      </if>
+      <if test="ItemType != null">
+        #{ItemType,jdbcType=INTEGER},
+      </if>
+      <if test="Name != null">
+        #{Name,jdbcType=VARCHAR},
+      </if>
+      <if test="Price != null">
+        #{Price,jdbcType=DECIMAL},
+      </if>
+      <if test="Amount != null">
+        #{Amount,jdbcType=DECIMAL},
+      </if>
+      <if test="DeptID != null">
+        #{DeptID,jdbcType=INTEGER},
+      </if>
+      <if test="Createtime != null">
+        #{Createtime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="CreateOperID != null">
+        #{CreateOperID,jdbcType=INTEGER},
+      </if>
+      <if test="PayTime != null">
+        #{PayTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="RegisterID != null">
+        #{RegisterID,jdbcType=INTEGER},
+      </if>
+      <if test="FeeType != null">
+        #{FeeType,jdbcType=INTEGER},
+      </if>
+    </trim>
+  </insert>
   <insert id="insert" parameterType="com.neuedu.pojo.PatientCosts">
     insert into patientcosts (ID, RegistID, InvoiceID, 
       ItemID, ItemType, Name, 

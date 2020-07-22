@@ -31,6 +31,67 @@
     delete from invoice
     where ID = #{id,jdbcType=INTEGER}
   </delete>
+  <!--插入发票信息-->
+  <insert id="addInvioce" useGeneratedKeys="true" keyColumn="ID" keyProperty="id">
+    insert into invoice
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+
+      <if test="InvoiceNum != null">
+        InvoiceNum,
+      </if>
+      <if test="Money != null">
+        Money,
+      </if>
+      <if test="State != null">
+        State,
+      </if>
+      <if test="CreationTime != null">
+        CreationTime,
+      </if>
+      <if test="UserID != null">
+        UserID,
+      </if>
+      <if test="RegistID != null">
+        RegistID,
+      </if>
+      <if test="FeeType != null">
+        FeeType,
+      </if>
+
+      <if test="DailyState != null">
+        DailyState,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+
+      <if test="InvoiceNum != null">
+        #{InvoiceNum,jdbcType=VARCHAR},
+      </if>
+      <if test="Money != null">
+        #{Money,jdbcType=DECIMAL},
+      </if>
+      <if test="State != null">
+        #{State,jdbcType=INTEGER},
+      </if>
+      <if test="CreationTime != null">
+        #{CreationTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="UserID != null">
+        #{UserID,jdbcType=INTEGER},
+      </if>
+      <if test="RegistID != null">
+        #{RegistID,jdbcType=INTEGER},
+      </if>
+      <if test="FeeType != null">
+        #{FeeType,jdbcType=INTEGER},
+      </if>
+
+      <if test="DailyState != null">
+        #{DailyState,jdbcType=INTEGER},
+      </if>
+    </trim>
+  </insert>
+
   <insert id="insert" parameterType="com.neuedu.pojo.Invoice">
     insert into invoice (ID, InvoiceNum, Money, 
       State, CreationTime, UserID, 

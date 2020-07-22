@@ -3,6 +3,9 @@ package com.neuedu.mapper;
 import com.neuedu.pojo.Invoice;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
+
+import java.util.Map;
+
 @Mapper
 public interface InvoiceMapper {
     int deleteByPrimaryKey(Integer id);
@@ -18,4 +21,6 @@ public interface InvoiceMapper {
     int updateByPrimaryKey(Invoice record);
 
     String getMaxInvoiceNumber(@Param("userId") int userid);
+
+    int addInvioce(Map<String, Object> invoiceMap);
 }

@@ -30,4 +30,20 @@ public class RegisterController {
     public int getAlreadyRegCount(@RequestBody Map<String ,Object> map){
        return registerService.getAlreadyRegCount(map);
     }
+    //挂号
+    @RequestMapping("/addRegister")
+    public Map<String ,Object> addRegister(@RequestBody Map<String ,Object> map,HttpSession session){
+        User user=(User) session.getAttribute("userInfo");
+        if(user!=null){
+            map.put("RegisterID",user.getId());
+        }
+        Map<String,Object > rmap=new HashMap<String,Object >();
+        int res=registerService.addRegister(map);
+        if(res>0){
+            rmap.put("msg","挂号成功！");
+        }else{
+            rmap.put("msg","挂号失败！");
+        }
+        return rmap;
+    }
 }

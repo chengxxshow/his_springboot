@@ -50,6 +50,125 @@
     delete from register
     where ID = #{id,jdbcType=INTEGER}
   </delete>
+  <!--插入挂号信息-->
+  <insert id="addRegister" useGeneratedKeys="true" keyColumn="ID" keyProperty="id">
+    insert into register
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+
+      <if test="CaseNumber != null">
+        CaseNumber,
+      </if>
+      <if test="RealName != null">
+        RealName,
+      </if>
+      <if test="Gender != null">
+        Gender,
+      </if>
+      <if test="IDnumber != null">
+        IDnumber,
+      </if>
+      <if test="BirthDate != null">
+        BirthDate,
+      </if>
+      <if test="Age != null">
+        Age,
+      </if>
+      <if test="AgeType != null">
+        AgeType,
+      </if>
+      <if test="HomeAddress != null">
+        HomeAddress,
+      </if>
+      <if test="VisitDate != null">
+        VisitDate,
+      </if>
+      <if test="Noon != null">
+        Noon,
+      </if>
+      <if test="deptid != null">
+        DeptID,
+      </if>
+      <if test="UserID != null">
+        UserID,
+      </if>
+      <if test="RegistLeID != null">
+        RegistLeID,
+      </if>
+      <if test="SettleID != null">
+        SettleID,
+      </if>
+      <if test="IsBook != null">
+        IsBook,
+      </if>
+      <if test="RegistTime != null">
+        RegistTime,
+      </if>
+      <if test="RegisterID != null">
+        RegisterID,
+      </if>
+      <if test="VisitState != null">
+        VisitState,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+
+      <if test="CaseNumber != null">
+        #{CaseNumber},
+      </if>
+      <if test="RealName != null">
+        #{RealName},
+      </if>
+      <if test="Gender != null">
+        #{Gender},
+      </if>
+      <if test="IDnumber != null">
+        #{IDnumber},
+      </if>
+      <if test="BirthDate != null">
+        #{BirthDate},
+      </if>
+      <if test="Age != null">
+        #{Age},
+      </if>
+      <if test="AgeType != null">
+        #{AgeType},
+      </if>
+      <if test="HomeAddress != null">
+        #{HomeAddress},
+      </if>
+      <if test="VisitDate != null">
+        #{VisitDate},
+      </if>
+      <if test="Noon != null">
+        #{Noon},
+      </if>
+      <if test="deptid != null">
+        #{deptid},
+      </if>
+      <if test="UserID != null">
+        #{UserID},
+      </if>
+      <if test="RegistLeID != null">
+        #{RegistLeID},
+      </if>
+      <if test="SettleID != null">
+        #{SettleID},
+      </if>
+      <if test="IsBook != null">
+        #{IsBook},
+      </if>
+      <if test="RegistTime != null">
+        #{RegistTime},
+      </if>
+      <if test="RegisterID != null">
+        #{RegisterID},
+      </if>
+      <if test="VisitState != null">
+        #{VisitState},
+      </if>
+    </trim>
+  </insert>
+
   <insert id="insert" parameterType="com.neuedu.pojo.Register">
     insert into register (ID, CaseNumber, RealName, 
       Gender, IDnumber, BirthDate, 
@@ -59,7 +178,7 @@
       IsBook, RegistTime, RegisterID, 
       VisitState)
     values (#{id,jdbcType=INTEGER}, #{casenumber,jdbcType=VARCHAR}, #{realname,jdbcType=VARCHAR}, 
-      #{gender,jdbcType=INTEGER}, #{idnumber,jdbcType=VARCHAR}, #{birthdate,jdbcType=DATE}, 
+      #{gender,jdbcType=INTEGER}, #{IDnumber,jdbcType=VARCHAR}, #{birthdate,jdbcType=DATE},
       #{age,jdbcType=INTEGER}, #{agetype,jdbcType=CHAR}, #{homeaddress,jdbcType=VARCHAR}, 
       #{visitdate,jdbcType=DATE}, #{noon,jdbcType=CHAR}, #{deptid,jdbcType=INTEGER}, 
       #{userid,jdbcType=INTEGER}, #{registleid,jdbcType=INTEGER}, #{settleid,jdbcType=INTEGER}, 
@@ -81,7 +200,7 @@
       <if test="gender != null">
         Gender,
       </if>
-      <if test="idnumber != null">
+      <if test="IDnumber != null">
         IDnumber,
       </if>
       <if test="birthdate != null">
