@@ -46,6 +46,47 @@
         </if>
    </select>
 
+  <!--根据看诊日期，午别，查询科室信息-->
+  <select id="getDeptByVDateAndNoon" resultType="java.util.Map">
+     select distinct a.deptid, b.deptname
+      from scheduling a ,department b
+      where a.deptid=b.id
+      and a.SchedDate=#{visitDate}
+      and a.noon=#{noon}
+  </select>
+
+
+  <!--根据看诊日期，午别，科室 查询号别-->
+  <select id="getRegLevlByDateNoonDept" resultType="java.util.Map">
+    select  distinct  b.id  reglevid,b.registname
+    from scheduling a, registlevel b,user c
+    where a.userid=c.id  and b.id=c.registleid
+    and a.SchedDate =#{visitDate}
+    and a.noon=#{noon}
+    and a.deptid=#{deptId}
+  </select>
+
+  <!--根据日期 午别 科室 号别 查医生-->
+  <select id="getDocByDateNoonDeptRegid" resultType="java.util.Map">
+     select  distinct  c.id  docid,c.realname
+      from scheduling a, registlevel b,user c
+      where a.userid=c.id  and b.id=c.registleid
+      and a.scheddate=#{visitDate}
+      and a.noon=#{noon}
+      and a.deptid=#{deptId}
+      and b.id=#{reglevid}
+  </select>
+
+  <!--根据日期 午别  医生 查询 限号额度  挂号费-->
+  <select id="getDocRegQuotaByDateNoon" resultType="java.util.Map">
+    select  distinct  b.registquota ,b.registfee
+    from scheduling a, registlevel b,user c
+    where a.userid=c.id  and b.id=c.registleid
+    and a.scheddate =#{visitDate}
+    and a.noon=#{noon}
+    and a.userid=#{userId}
+  </select>
+
   <insert id="addScheduling" parameterType="java.util.Map">
     insert into scheduling (SchedDate, DeptID,
       UserID, Noon, RuleID,

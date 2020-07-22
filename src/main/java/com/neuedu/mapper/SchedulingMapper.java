@@ -29,4 +29,12 @@ public interface SchedulingMapper {
 
 
     int addScheduling(Map<String, Object> schdulingMap);
+
+    List<Map<String, Object>> getDeptByVDateAndNoon(@Param("visitDate") String visitDate, @Param("noon") String noon);
+
+    List<Map<String, Object>> getRegLevlByDateNoonDept(Map<String, Object> map);
+
+    List<Map<String, Object>> getDocByDateNoonDeptRegid(Map<String, Object> map);
+
+    Map<String, Object>  getDocRegQuotaByDateNoon(Map<String, Object> map);
 }

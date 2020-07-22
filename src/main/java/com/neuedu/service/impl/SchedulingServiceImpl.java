@@ -85,6 +85,26 @@ public class SchedulingServiceImpl implements SchedulingService {
         return result;
     }
 
+    @Override
+    public List<Map<String, Object>> getDeptByVDateAndNoon(String visitDate, String noon) {
+        return schedulingMapper.getDeptByVDateAndNoon(visitDate,noon);
+    }
+
+    @Override
+    public List<Map<String, Object>> getRegLevlByDateNoonDept(Map<String, Object> map) {
+        return schedulingMapper.getRegLevlByDateNoonDept(map);
+    }
+
+    @Override
+    public List<Map<String, Object>> getDocByDateNoonDeptRegid(Map<String, Object> map) {
+        return schedulingMapper.getDocByDateNoonDeptRegid(map);
+    }
+
+    @Override
+    public Map<String, Object> getDocRegQuotaByDateNoon(Map<String, Object> map) {
+        return schedulingMapper.getDocRegQuotaByDateNoon(map);
+    }
+
     //判断当前日期对应的星期数  1 2 3 4 5 6 7
                        //  2 3 4 5 6 7 1
     public int dayForWeek(Date date){

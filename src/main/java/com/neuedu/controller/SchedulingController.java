@@ -48,11 +48,36 @@ public class SchedulingController {
         return map;
     }
     //根据看诊日期和午别查询科室列表
-    @RequestMapping(value = "/getDeptByVDateAndNoon", method = RequestMethod.GET)
-    public Map<String, Object> getDeptByVDateAndNoon(@RequestParam("visitDate") String visitDate,@RequestParam("noon") String noon) {
+    @RequestMapping("/getDeptByVDateAndNoon")
+    public Map<String, Object> getDeptByVDateAndNoon(@RequestBody Map<String,Object> map) {
+        String visitDate=(String)map.get("visitDate");
+        String noon=(String)map.get("noon");
         List<Map<String,Object>> list = schedulingService.getDeptByVDateAndNoon(visitDate,noon);
-        Map<String, Object> map = new HashMap<>();
-        map.put("list", list);
-        return map;
+        Map<String, Object> reesmap = new HashMap<>();
+        reesmap.put("list", list);
+        return reesmap;
+    }
+    //根据看诊日期和午别科室查询号别列表
+    @RequestMapping("/getRegLevlByDateNoonDept")
+    public Map<String, Object> getRegLevlByDateNoonDept(@RequestBody Map<String,Object> map) {
+        List<Map<String,Object>> list = schedulingService.getRegLevlByDateNoonDept(map);
+        Map<String, Object> reesmap = new HashMap<>();
+        reesmap.put("list", list);
+        return reesmap;
+    }
+    //根据看诊日期和午别科室号别查询医生列表
+    @RequestMapping("/getDocByDateNoonDeptRegid")
+    public Map<String, Object> getDocByDateNoonDeptRegid(@RequestBody Map<String,Object> map) {
+        List<Map<String,Object>> list = schedulingService.getDocByDateNoonDeptRegid(map);
+        Map<String, Object> reesmap = new HashMap<>();
+        reesmap.put("list", list);
+        return reesmap;
+    }
+
+    //根据看诊日期和午别,医生  查询初始限号额度 和挂号费
+    @RequestMapping("/getDocRegQuotaByDateNoon")
+    public  Map<String, Object>  getDocRegQuotaByDateNoon(@RequestBody Map<String,Object> map) {
+        Map<String, Object> resmap= schedulingService.getDocRegQuotaByDateNoon(map);
+        return resmap;
     }
 }
