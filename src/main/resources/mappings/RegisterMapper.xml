@@ -31,6 +31,15 @@
   <select id="getMaxCaseNumber" resultType="string">
      select max(CaseNumber)+1  from  register
   </select>
+  <!--查询已挂号数量-->
+  <select id="getAlreadyRegCount" resultType="int">
+    select  count(*) from  register
+    where VisitState &lt;4
+    and VisitDate=#{visitDate}
+    and Noon=#{noon}
+    and UserID=#{userId}
+  </select>
+
   <select id="selectByPrimaryKey" parameterType="Integer" resultMap="BaseResultMap">
     select 
     <include refid="Base_Column_List" />

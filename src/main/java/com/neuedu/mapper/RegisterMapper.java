@@ -3,6 +3,8 @@ package com.neuedu.mapper;
 import com.neuedu.pojo.Register;
 import org.apache.ibatis.annotations.Mapper;
 
+import java.util.Map;
+
 @Mapper
 public interface RegisterMapper {
     int deleteByPrimaryKey(Integer id);
@@ -18,4 +20,6 @@ public interface RegisterMapper {
     int updateByPrimaryKey(Register record);
 
     String getMaxCaseNumber();
+
+    int getAlreadyRegCount(Map<String, Object> map);
 }
