@@ -1,16 +1,15 @@
 package com.neuedu.controller;
 
+import com.neuedu.pojo.Register;
 import com.neuedu.pojo.User;
 import com.neuedu.service.InvoiceService;
 import com.neuedu.service.RegisterService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.RequestAttribute;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpSession;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 @RestController
@@ -46,4 +45,16 @@ public class RegisterController {
         }
         return rmap;
     }
+
+    //根据医生id查询待诊患者列表和接诊患者列表
+    @RequestMapping("/getRegListByDoc")
+    public Map<String,Object> getRegListByDoc(int state,int docid){
+        Map<String,Object> map=new HashMap<String,Object>();
+        List<Register> list=registerService.getRegListByDoc(state,docid);
+        map.put("list",list);
+        map.put("count",list.size());
+        return map;
+    }
+
+
 }

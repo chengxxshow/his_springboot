@@ -40,6 +40,10 @@
     and UserID=#{userId}
   </select>
 
+  <!--根据医生id查询患者列表-->
+  <select id="getRegListByDoc" resultMap="BaseResultMap">
+      select  * from register where  userid=#{docid} and VisitState=#{state}
+  </select>
   <select id="selectByPrimaryKey" parameterType="Integer" resultMap="BaseResultMap">
     select 
     <include refid="Base_Column_List" />

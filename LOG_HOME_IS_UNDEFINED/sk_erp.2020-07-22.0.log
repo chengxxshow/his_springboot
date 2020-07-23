@@ -31967,3 +31967,106 @@ Unconditional classes:
 2020-07-22 16:54:23.629 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
 2020-07-22 16:54:53.631 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
 2020-07-22 16:54:53.631 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2020-07-22 16:55:23.633 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2020-07-22 16:55:23.634 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2020-07-22 16:55:53.636 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2020-07-22 16:55:53.636 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2020-07-22 16:56:23.638 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2020-07-22 16:56:23.638 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2020-07-22 16:56:44.107 [http-nio-8091-exec-9] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/neughsf/invoice/getMaxInvoiceNumber", parameters={}
+2020-07-22 16:56:44.110 [http-nio-8091-exec-9] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.neuedu.controller.InvoiceController#getInvoiceBean(HttpSession)
+2020-07-22 16:56:44.112 [http-nio-8091-exec-9] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2020-07-22 16:56:44.112 [http-nio-8091-exec-9] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@115f2f3] was not registered for synchronization because synchronization is not active
+2020-07-22 16:56:44.113 [http-nio-8091-exec-9] DEBUG o.springframework.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2020-07-22 16:56:44.114 [http-nio-8091-exec-9] DEBUG o.m.spring.transaction.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@7211654 wrapping com.mysql.cj.jdbc.ConnectionImpl@1cdfc95] will not be managed by Spring
+2020-07-22 16:56:44.116 [http-nio-8091-exec-9] DEBUG c.neuedu.mapper.InvoiceMapper.getMaxInvoiceNumber - ==>  Preparing: select max(InvoiceNum)+1 from invoice WHERE UserID=? 
+2020-07-22 16:56:44.117 [http-nio-8091-exec-9] DEBUG c.neuedu.mapper.InvoiceMapper.getMaxInvoiceNumber - ==> Parameters: 9(Integer)
+2020-07-22 16:56:44.121 [http-nio-8091-exec-9] DEBUG c.neuedu.mapper.InvoiceMapper.getMaxInvoiceNumber - <==      Total: 1
+2020-07-22 16:56:44.122 [http-nio-8091-exec-9] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@115f2f3]
+2020-07-22 16:56:44.123 [http-nio-8091-exec-9] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-07-22 16:56:44.124 [http-nio-8091-exec-9] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [{invoicenum=800815.0}]
+2020-07-22 16:56:44.129 [http-nio-8091-exec-9] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2020-07-22 16:56:44.132 [http-nio-8091-exec-9] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/neughsf/register/getMaxCaseNumber", parameters={}
+2020-07-22 16:56:44.133 [http-nio-8091-exec-9] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.neuedu.controller.RegisterController#getMaxCaseNumber()
+2020-07-22 16:56:44.134 [http-nio-8091-exec-9] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2020-07-22 16:56:44.134 [http-nio-8091-exec-9] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1429eef] was not registered for synchronization because synchronization is not active
+2020-07-22 16:56:44.134 [http-nio-8091-exec-9] DEBUG o.springframework.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2020-07-22 16:56:44.135 [http-nio-8091-exec-9] DEBUG o.m.spring.transaction.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@22191675 wrapping com.mysql.cj.jdbc.ConnectionImpl@1cdfc95] will not be managed by Spring
+2020-07-22 16:56:44.135 [http-nio-8091-exec-9] DEBUG com.neuedu.mapper.RegisterMapper.getMaxCaseNumber - ==>  Preparing: select max(CaseNumber)+1 from register 
+2020-07-22 16:56:44.136 [http-nio-8091-exec-9] DEBUG com.neuedu.mapper.RegisterMapper.getMaxCaseNumber - ==> Parameters: 
+2020-07-22 16:56:44.142 [http-nio-8091-exec-9] DEBUG com.neuedu.mapper.RegisterMapper.getMaxCaseNumber - <==      Total: 1
+2020-07-22 16:56:44.144 [http-nio-8091-exec-9] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1429eef]
+2020-07-22 16:56:44.146 [http-nio-8091-exec-9] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-07-22 16:56:44.146 [http-nio-8091-exec-9] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [{casenumber=600625.0}]
+2020-07-22 16:56:44.174 [http-nio-8091-exec-9] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2020-07-22 16:56:44.178 [http-nio-8091-exec-9] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/neusys/contantitem/getitemListBytypeCode?typecode=Gender", parameters={masked}
+2020-07-22 16:56:44.179 [http-nio-8091-exec-9] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.neuedu.controller.ConstantitemController#getitemListBytypeCode(String)
+2020-07-22 16:56:44.180 [http-nio-8091-exec-9] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2020-07-22 16:56:44.180 [http-nio-8091-exec-9] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1206968] was not registered for synchronization because synchronization is not active
+2020-07-22 16:56:44.181 [http-nio-8091-exec-9] DEBUG o.springframework.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2020-07-22 16:56:44.181 [http-nio-8091-exec-9] DEBUG o.m.spring.transaction.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@17650601 wrapping com.mysql.cj.jdbc.ConnectionImpl@1cdfc95] will not be managed by Spring
+2020-07-22 16:56:44.182 [http-nio-8091-exec-9] DEBUG c.n.m.ConstantItemMapper.getitemListBytypeCode - ==>  Preparing: select * from constantitem where constanttypeid=( select id from constanttype where constanttypecode=? ) 
+2020-07-22 16:56:44.183 [http-nio-8091-exec-9] DEBUG c.n.m.ConstantItemMapper.getitemListBytypeCode - ==> Parameters: Gender(String)
+2020-07-22 16:56:44.189 [http-nio-8091-exec-9] DEBUG c.n.m.ConstantItemMapper.getitemListBytypeCode - <==      Total: 2
+2020-07-22 16:56:44.190 [http-nio-8091-exec-9] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1206968]
+2020-07-22 16:56:44.191 [http-nio-8091-exec-9] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-07-22 16:56:44.191 [http-nio-8091-exec-9] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [{list=[{ConstantCode=NAN, ConstantTypeID=7, ConstantName=男, ID=71, DelMark=1}, {ConstantCode=NV, Con (truncated)...]
+2020-07-22 16:56:44.194 [http-nio-8091-exec-9] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2020-07-22 16:56:44.203 [http-nio-8091-exec-6] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/neusys/contantitem/getitemListBytypeCode?typecode=FeeType", parameters={masked}
+2020-07-22 16:56:44.205 [http-nio-8091-exec-6] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.neuedu.controller.ConstantitemController#getitemListBytypeCode(String)
+2020-07-22 16:56:44.206 [http-nio-8091-exec-6] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2020-07-22 16:56:44.206 [http-nio-8091-exec-6] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@b55a8f] was not registered for synchronization because synchronization is not active
+2020-07-22 16:56:44.207 [http-nio-8091-exec-6] DEBUG o.springframework.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2020-07-22 16:56:44.207 [http-nio-8091-exec-6] DEBUG o.m.spring.transaction.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@32089768 wrapping com.mysql.cj.jdbc.ConnectionImpl@1cdfc95] will not be managed by Spring
+2020-07-22 16:56:44.208 [http-nio-8091-exec-6] DEBUG c.n.m.ConstantItemMapper.getitemListBytypeCode - ==>  Preparing: select * from constantitem where constanttypeid=( select id from constanttype where constanttypecode=? ) 
+2020-07-22 16:56:44.210 [http-nio-8091-exec-6] DEBUG c.n.m.ConstantItemMapper.getitemListBytypeCode - ==> Parameters: FeeType(String)
+2020-07-22 16:56:44.208 [http-nio-8091-exec-10] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/neusys/settleCategory/all", parameters={}
+2020-07-22 16:56:44.220 [http-nio-8091-exec-6] DEBUG c.n.m.ConstantItemMapper.getitemListBytypeCode - <==      Total: 8
+2020-07-22 16:56:44.221 [http-nio-8091-exec-10] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.neuedu.controller.SettleCategoryController#getSettleCategory()
+2020-07-22 16:56:44.221 [http-nio-8091-exec-6] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@b55a8f]
+2020-07-22 16:56:44.221 [http-nio-8091-exec-10] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2020-07-22 16:56:44.222 [http-nio-8091-exec-10] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1b27677] was not registered for synchronization because synchronization is not active
+2020-07-22 16:56:44.222 [http-nio-8091-exec-10] DEBUG o.springframework.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2020-07-22 16:56:44.222 [http-nio-8091-exec-6] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-07-22 16:56:44.223 [http-nio-8091-exec-6] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [{list=[{ConstantCode=XJ, ConstantTypeID=5, ConstantName=现金, ID=51, DelMark=1}, {ConstantCode=YBK, Co (truncated)...]
+2020-07-22 16:56:44.223 [http-nio-8091-exec-10] DEBUG o.m.spring.transaction.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@28265620 wrapping com.mysql.cj.jdbc.ConnectionImpl@153ac02] will not be managed by Spring
+2020-07-22 16:56:44.225 [http-nio-8091-exec-6] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2020-07-22 16:56:44.225 [http-nio-8091-exec-10] DEBUG c.n.mapper.SettleCategoryMapper.getSettleCategory - ==>  Preparing: select * from settlecategory where delmark=1 
+2020-07-22 16:56:44.228 [http-nio-8091-exec-10] DEBUG c.n.mapper.SettleCategoryMapper.getSettleCategory - ==> Parameters: 
+2020-07-22 16:56:44.236 [http-nio-8091-exec-10] DEBUG c.n.mapper.SettleCategoryMapper.getSettleCategory - <==      Total: 2
+2020-07-22 16:56:44.239 [http-nio-8091-exec-10] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1b27677]
+2020-07-22 16:56:44.240 [http-nio-8091-exec-10] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-07-22 16:56:44.241 [http-nio-8091-exec-10] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [{list=[{SequenceNo=1, ID=1, SettleName=自费, SettleCode=js001, DelMark=1}, {SequenceNo=2, ID=2, Settle (truncated)...]
+2020-07-22 16:56:44.244 [http-nio-8091-exec-10] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2020-07-22 16:56:53.640 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2020-07-22 16:56:53.640 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2020-07-22 16:57:23.641 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2020-07-22 16:57:23.642 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2020-07-22 16:57:53.645 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2020-07-22 16:57:53.645 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2020-07-22 16:58:23.647 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2020-07-22 16:58:23.647 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2020-07-22 16:58:53.648 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2020-07-22 16:58:53.648 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2020-07-22 16:59:23.650 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2020-07-22 16:59:23.650 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2020-07-22 16:59:53.652 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2020-07-22 16:59:53.652 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2020-07-22 17:00:23.654 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2020-07-22 17:00:23.654 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2020-07-22 17:00:53.655 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2020-07-22 17:00:53.655 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2020-07-22 17:01:23.657 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2020-07-22 17:01:23.657 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2020-07-22 17:01:53.659 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2020-07-22 17:01:53.659 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2020-07-22 17:02:23.660 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2020-07-22 17:02:23.660 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2020-07-22 17:02:53.662 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2020-07-22 17:02:53.662 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2020-07-22 17:03:23.664 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2020-07-22 17:03:23.664 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2020-07-22 17:03:53.666 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2020-07-22 17:03:53.667 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2020-07-22 17:04:23.667 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2020-07-22 17:04:23.668 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool is at sufficient level.

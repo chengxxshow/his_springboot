@@ -3,6 +3,7 @@ package com.neuedu.service.impl;
 import com.neuedu.mapper.InvoiceMapper;
 import com.neuedu.mapper.PatientCostsMapper;
 import com.neuedu.mapper.RegisterMapper;
+import com.neuedu.pojo.Register;
 import com.neuedu.service.RegisterService;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -13,6 +14,7 @@ import java.math.BigInteger;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 @Service
@@ -82,5 +84,10 @@ public class RegisterServiceImpl implements RegisterService {
 
         int i=patientCostsMapper.addPatientCosts(pcostMap);
         return i;
+    }
+
+    @Override
+    public List<Register> getRegListByDoc(int state, int docid) {
+        return registerMapper.getRegListByDoc(state,docid);
     }
 }
