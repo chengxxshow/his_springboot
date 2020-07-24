@@ -150,4 +150,25 @@ public class MedicalRecord {
     public void setCasestate(Integer casestate) {
         this.casestate = casestate;
     }
+
+    @Override
+    public String toString() {
+        return "MedicalRecord{" +
+                "id=" + id +
+                ", casenumber='" + casenumber + '\'' +
+                ", registid=" + registid +
+                ", readme='" + readme + '\'' +
+                ", present='" + present + '\'' +
+                ", presenttreat='" + presenttreat + '\'' +
+                ", history='" + history + '\'' +
+                ", allergy='" + allergy + '\'' +
+                ", physique='" + physique + '\'' +
+                ", proposal='" + proposal + '\'' +
+                ", careful='" + careful + '\'' +
+                ", checkresult='" + checkresult + '\'' +
+                ", diagnosis='" + diagnosis + '\'' +
+                ", handling='" + handling + '\'' +
+                ", casestate=" + casestate +
+                '}';
+    }
 }

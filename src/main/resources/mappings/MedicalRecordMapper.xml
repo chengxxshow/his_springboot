@@ -22,6 +22,10 @@
     ID, CaseNumber, RegistID, Readme, Present, PresentTreat, History, Allergy, Physique, 
     Proposal, Careful, CheckResult, Diagnosis, Handling, CaseState
   </sql>
+  <!--根据病例号查询患者病历信息-->
+  <select id="getMedicalRecordByCaseNum" resultMap="BaseResultMap">
+     select * from  medicalrecord  where CaseNumber=#{casenumber} order by  id desc limit 0,1
+  </select>
   <select id="selectByPrimaryKey" parameterType="Integer" resultMap="BaseResultMap">
     select 
     <include refid="Base_Column_List" />
